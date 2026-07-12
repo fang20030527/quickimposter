@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
+import { siteMetadata } from "./seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,11 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Quick Imposter | Free Imposter Word Game Online",
-  description:
-    "Pass one phone, reveal private words, and find the imposter. No signup or download needed.",
-};
+export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
   children,

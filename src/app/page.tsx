@@ -9,9 +9,24 @@ import {
 import { BrandLogo } from "@/components/brand-logo";
 import { GameExperience } from "@/components/game/game-experience";
 
+import {
+  createHomepageStructuredData,
+  serializeStructuredData,
+} from "./seo";
+
 export default function Home() {
+  const structuredData = createHomepageStructuredData();
+
   return (
-    <main>
+    <>
+      <script
+        id="quick-imposter-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeStructuredData(structuredData),
+        }}
+      />
+      <main>
       <header className="site-header">
         <a className="brand-lockup" href="#top" aria-label="Quick Imposter home">
           <BrandLogo variant="navigation" fetchPriority="high" />
@@ -26,8 +41,12 @@ export default function Home() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
           <BrandLogo variant="hero" />
-          <h1 id="hero-title">Who got the different word?</h1>
-          <p>Pass the phone. Find the imposter. Start in 30 seconds.</p>
+          <span className="hero-question">Who got the different word?</span>
+          <h1 id="hero-title">Free Imposter Game Online for One Phone</h1>
+          <p>
+            Generate secret words for 3–12 players, pass the phone, and find
+            the imposter. No signup or download.
+          </p>
           <a className="down-link" href="#game">
             Pick your group size
             <ArrowDown weight="bold" aria-hidden="true" />
@@ -47,13 +66,16 @@ export default function Home() {
       <section className="how-section" id="how-to-play" aria-labelledby="how-title">
         <div className="how-heading">
           <span className="section-kicker">How to play</span>
-          <h2 id="how-title">A whole game in one hand.</h2>
-          <p>Set up once, then pass the phone clockwise. The site handles every secret.</p>
+          <h2 id="how-title">How to play the imposter game</h2>
+          <p>
+            Start a free imposter word game in three quick steps. The site
+            generates the words and keeps every secret hidden.
+          </p>
         </div>
         <ol className="steps-list">
           <li>
             <span className="step-number">1</span>
-            <div><h3>Choose your group</h3><p>Pick 3-12 players and a word category.</p></div>
+            <div><h3>Choose your group and words</h3><p>Pick 3–12 players, then use the word generator or enter custom words.</p></div>
           </li>
           <li>
             <span className="step-number">2</span>
@@ -101,6 +123,10 @@ export default function Home() {
             <summary>What happens after the vote?</summary>
             <p>Reveal the imposter first. Let them guess, then reveal the civilian word.</p>
           </details>
+          <details>
+            <summary>Is Quick Imposter free to play online?</summary>
+            <p>Yes. The full imposter game is free, with no account, app download, or online room required.</p>
+          </details>
         </div>
       </section>
 
@@ -109,8 +135,9 @@ export default function Home() {
           <BrandLogo variant="navigation" />
           <span>Quick Imposter</span>
         </a>
-        <p>Free to play. Built for the room you are already in.</p>
+        <p>Free online imposter word game. Built for the room you are already in.</p>
       </footer>
-    </main>
+      </main>
+    </>
   );
 }
