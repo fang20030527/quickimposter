@@ -1,0 +1,3622 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "qGMFK",
+      "x": 0,
+      "y": 0,
+      "name": "Quick Imposter — Desktop 1536×1024",
+      "clip": true,
+      "width": 1536,
+      "height": 1024,
+      "fill": "$page-bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "fJLx1",
+          "x": 0,
+          "y": 0,
+          "name": "Desktop Header",
+          "width": 1536,
+          "height": 82,
+          "fill": "#FFFFFFE8",
+          "stroke": "$line",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "kJtyx",
+              "x": 98,
+              "y": 9,
+              "name": "Quick Imposter Logo",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/quick-imposter-logo.png",
+                "mode": "fit"
+              },
+              "width": 138,
+              "height": 68
+            },
+            {
+              "type": "text",
+              "id": "sZiCy",
+              "x": 1053,
+              "y": 34,
+              "name": "How to play Nav",
+              "fill": "$brand-navy",
+              "content": "How to play",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "rAYx9",
+              "x": 1213,
+              "y": 34,
+              "name": "FAQ Nav",
+              "fill": "$brand-navy",
+              "content": "FAQ",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "LRyyq",
+              "x": 1290,
+              "y": 17,
+              "name": "Play now Button",
+              "width": 158,
+              "height": 52,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$brand-yellow",
+                    "position": 0
+                  },
+                  {
+                    "color": "#FFD84D",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 8,
+              "stroke": "$brand-navy",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "$brand-navy",
+                "offset": {
+                  "x": 0,
+                  "y": 3
+                }
+              },
+              "gap": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "hAndJ",
+                  "name": "Play now Lightning",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "bolt",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                },
+                {
+                  "type": "text",
+                  "id": "w0sZA",
+                  "name": "Play now Label",
+                  "fill": "$brand-navy",
+                  "content": "Play now",
+                  "fontFamily": "$font",
+                  "fontSize": 18,
+                  "fontWeight": "800"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XqQOh",
+          "x": 84,
+          "y": 104,
+          "name": "Desktop Left Column",
+          "width": 700,
+          "height": 760,
+          "layout": "none",
+          "children": [
+            {
+              "type": "icon",
+              "id": "d3mubq",
+              "x": 0,
+              "y": 5,
+              "name": "Hero Lightning",
+              "width": 64,
+              "height": 64,
+              "icon": "bolt",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "$brand-yellow"
+            },
+            {
+              "type": "ellipse",
+              "id": "cSOHv",
+              "x": 586,
+              "y": 38,
+              "name": "Hero Ghost Head",
+              "fill": "#DCCEFF66",
+              "width": 114,
+              "height": 114
+            },
+            {
+              "type": "ellipse",
+              "id": "c64Gir",
+              "x": 612,
+              "y": 76,
+              "name": "Hero Ghost Eye Left",
+              "rotation": -20,
+              "fill": "#B39AE866",
+              "width": 24,
+              "height": 13
+            },
+            {
+              "type": "ellipse",
+              "id": "AeRHA",
+              "x": 651,
+              "y": 76,
+              "name": "Hero Ghost Eye Right",
+              "rotation": 20,
+              "fill": "#B39AE866",
+              "width": 24,
+              "height": 13
+            },
+            {
+              "type": "text",
+              "id": "raP1Z",
+              "x": 20,
+              "y": 52,
+              "name": "Hero Headline",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FFFFFF",
+                    "position": 0
+                  },
+                  {
+                    "color": "#C66BFF",
+                    "position": 1
+                  }
+                ]
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "$brand-navy",
+                "offset": {
+                  "x": 0,
+                  "y": 8
+                }
+              },
+              "textGrowth": "fixed-width-height",
+              "width": 670,
+              "height": 190,
+              "content": "Who got the\ndifferent word?",
+              "lineHeight": 0.9,
+              "fontFamily": "$font",
+              "fontSize": 73,
+              "fontWeight": "900",
+              "letterSpacing": -3
+            },
+            {
+              "type": "path",
+              "id": "cWfka",
+              "x": 48,
+              "y": 247,
+              "name": "Hero Yellow Underline",
+              "geometry": "M0 6c90 22 220-11 330-1l-2 8c-128 11-232 18-324 1z",
+              "viewBox": [
+                0,
+                0,
+                330,
+                32
+              ],
+              "fill": "$brand-yellow",
+              "width": 330,
+              "height": 18
+            },
+            {
+              "type": "text",
+              "id": "Z52q7p",
+              "x": 142,
+              "y": 278,
+              "name": "Hero Subtitle",
+              "fill": "#38324F",
+              "textGrowth": "fixed-width",
+              "width": 470,
+              "content": "Pass the phone. Find the imposter.\nStart in 30 seconds.",
+              "lineHeight": 1.15,
+              "textAlign": "center",
+              "fontFamily": "$font",
+              "fontSize": 27,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "xWKZE",
+              "x": 14,
+              "y": 365,
+              "name": "Desktop Benefits",
+              "width": 676,
+              "height": 106,
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rm4ha",
+                  "name": "Benefit Card 1",
+                  "width": "fill_container",
+                  "height": 106,
+                  "fill": "#FFFFFFA8",
+                  "cornerRadius": 12,
+                  "stroke": "$line",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    15,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "tdrxF",
+                      "name": "Benefit Icon 1",
+                      "width": 46,
+                      "height": 46,
+                      "icon": "bolt",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CJjo3",
+                      "name": "Benefit Copy 1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yVhBE",
+                          "name": "Benefit Title 1",
+                          "fill": "$brand-navy",
+                          "content": "Ready in\n30 seconds",
+                          "lineHeight": 1.05,
+                          "fontFamily": "$font",
+                          "fontSize": 16,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "z8Kdbx",
+                          "name": "Benefit Body 1",
+                          "fill": "$muted",
+                          "content": "Start fast. Play\nright away.",
+                          "lineHeight": 1.1,
+                          "fontFamily": "$font",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fTVYE",
+                  "name": "Benefit Card 2",
+                  "width": "fill_container",
+                  "height": 106,
+                  "fill": "#FFFFFFA8",
+                  "cornerRadius": 12,
+                  "stroke": "$line",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    15,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "gRSgu",
+                      "name": "Benefit Icon 2",
+                      "width": 46,
+                      "height": 46,
+                      "icon": "smartphone",
+                      "library": "lucide",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rheCd",
+                      "name": "Benefit Copy 2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wx6gK",
+                          "name": "Benefit Title 2",
+                          "fill": "$brand-navy",
+                          "content": "One phone\nfor everyone",
+                          "lineHeight": 1.05,
+                          "fontFamily": "$font",
+                          "fontSize": 16,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "K9yJ1h",
+                          "name": "Benefit Body 2",
+                          "fill": "$muted",
+                          "content": "Pass it around.\nThat’s it.",
+                          "lineHeight": 1.1,
+                          "fontFamily": "$font",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bBOfL",
+                  "name": "Benefit Card 3",
+                  "width": "fill_container",
+                  "height": 106,
+                  "fill": "#FFFFFFA8",
+                  "cornerRadius": 12,
+                  "stroke": "$line",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    15,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "cbCKz",
+                      "name": "Benefit Icon 3",
+                      "width": 46,
+                      "height": 46,
+                      "icon": "verified_user",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LeilZ",
+                      "name": "Benefit Copy 3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wYUTD",
+                          "name": "Benefit Title 3",
+                          "fill": "$brand-navy",
+                          "content": "No signup\nor download",
+                          "lineHeight": 1.05,
+                          "fontFamily": "$font",
+                          "fontSize": 16,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "udNct",
+                          "name": "Benefit Body 3",
+                          "fill": "$muted",
+                          "content": "Open the site\nand play.",
+                          "lineHeight": 1.1,
+                          "fontFamily": "$font",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "m0JY4",
+              "x": 14,
+              "y": 512,
+              "name": "Desktop How To Play",
+              "width": 676,
+              "height": 245,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JHcbm",
+                  "x": 0,
+                  "y": 0,
+                  "name": "How Eyebrow",
+                  "fill": "$brand-purple",
+                  "content": "HOW TO PLAY",
+                  "fontFamily": "$font",
+                  "fontSize": 15,
+                  "fontWeight": "900",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "ZNGsg",
+                  "x": 0,
+                  "y": 25,
+                  "name": "How Title",
+                  "fill": "$brand-navy",
+                  "content": "A whole game in one hand.",
+                  "fontFamily": "$font",
+                  "fontSize": 44,
+                  "fontWeight": "900",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "i192a",
+                  "x": 0,
+                  "y": 80,
+                  "name": "How Intro",
+                  "fill": "#39334F",
+                  "content": "Set up once, then pass the phone clockwise.\nThe site handles every secret.",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "l1j9T",
+                  "x": 0,
+                  "y": 124,
+                  "name": "Desktop Steps",
+                  "width": 675,
+                  "height": 121,
+                  "gap": 30,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "R0Dsl",
+                      "name": "Step Card 01",
+                      "width": "fill_container",
+                      "height": 121,
+                      "fill": "#FFFFFFB8",
+                      "cornerRadius": 12,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "s6Jl37",
+                          "x": 13,
+                          "y": 5,
+                          "name": "Step Number 01",
+                          "fill": "#BCA5EE",
+                          "content": "01",
+                          "fontFamily": "$font",
+                          "fontSize": 58,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "f1j8Qd",
+                          "x": 110,
+                          "y": 20,
+                          "name": "Step Icon 01",
+                          "width": 52,
+                          "height": 52,
+                          "icon": "groups",
+                          "library": "Material Symbols Rounded",
+                          "weight": 700,
+                          "fill": "$brand-purple"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Qumav",
+                          "x": 16,
+                          "y": 74,
+                          "name": "Step Title 01",
+                          "fill": "$brand-navy",
+                          "content": "Choose your group",
+                          "fontFamily": "$font",
+                          "fontSize": 16,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZY7C8",
+                          "x": 16,
+                          "y": 90,
+                          "name": "Step Body 01",
+                          "fill": "$muted",
+                          "content": "Pick 3–12 players and\na word category.",
+                          "lineHeight": 1.15,
+                          "fontFamily": "$font",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q85cr",
+                      "name": "Step Card 02",
+                      "width": "fill_container",
+                      "height": 121,
+                      "fill": "#FFFFFFB8",
+                      "cornerRadius": 12,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "b3AH80",
+                          "x": 13,
+                          "y": 5,
+                          "name": "Step Number 02",
+                          "fill": "#BCA5EE",
+                          "content": "02",
+                          "fontFamily": "$font",
+                          "fontSize": 58,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "jhcTG",
+                          "x": 110,
+                          "y": 20,
+                          "name": "Step Icon 02",
+                          "width": 52,
+                          "height": 52,
+                          "icon": "visibility",
+                          "library": "Material Symbols Rounded",
+                          "weight": 700,
+                          "fill": "$brand-purple"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ehKo4",
+                          "x": 16,
+                          "y": 74,
+                          "name": "Step Title 02",
+                          "fill": "$brand-navy",
+                          "content": "Pass and peek",
+                          "fontFamily": "$font",
+                          "fontSize": 16,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EaQYk",
+                          "x": 16,
+                          "y": 90,
+                          "name": "Step Body 02",
+                          "fill": "$muted",
+                          "content": "Each player holds to\nreveal one private word.",
+                          "lineHeight": 1.15,
+                          "fontFamily": "$font",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CxEND",
+                      "name": "Step Card 03",
+                      "width": "fill_container",
+                      "height": 121,
+                      "fill": "#FFFFFFB8",
+                      "cornerRadius": 12,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SJ7q2",
+                          "x": 13,
+                          "y": 5,
+                          "name": "Step Number 03",
+                          "fill": "#BCA5EE",
+                          "content": "03",
+                          "fontFamily": "$font",
+                          "fontSize": 58,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "yaNmh",
+                          "x": 110,
+                          "y": 20,
+                          "name": "Step Icon 03",
+                          "width": 52,
+                          "height": 52,
+                          "icon": "forum",
+                          "library": "Material Symbols Rounded",
+                          "weight": 700,
+                          "fill": "$brand-purple"
+                        },
+                        {
+                          "type": "text",
+                          "id": "inWfK",
+                          "x": 16,
+                          "y": 74,
+                          "name": "Step Title 03",
+                          "fill": "$brand-navy",
+                          "content": "Describe and vote",
+                          "fontFamily": "$font",
+                          "fontSize": 16,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WIJSM",
+                          "x": 16,
+                          "y": 90,
+                          "name": "Step Body 03",
+                          "fill": "$muted",
+                          "content": "Give clues, spot the odd\nword, then reveal the imposter.",
+                          "lineHeight": 1.15,
+                          "fontFamily": "$font",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QaVQb",
+          "x": 840,
+          "y": 105,
+          "name": "Desktop Game Setup",
+          "width": 574,
+          "height": 455,
+          "fill": "#FFFFFFF2",
+          "cornerRadius": 16,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#2B15501A",
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "blur": 16
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "wa3Nj",
+              "x": 36,
+              "y": 17,
+              "name": "Setup Eyebrow",
+              "fill": "$brand-purple",
+              "content": "SET UP YOUR GAME",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "900",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "F8LOW",
+              "x": 36,
+              "y": 42,
+              "name": "Setup Title",
+              "fill": "$brand-navy",
+              "content": "How many are playing?",
+              "fontFamily": "$font",
+              "fontSize": 34,
+              "fontWeight": "900",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "dgNrt",
+              "x": 36,
+              "y": 84,
+              "name": "Setup Description",
+              "fill": "#343047",
+              "content": "Choose everyone who will receive a secret word.",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "A1yaS",
+              "x": 36,
+              "y": 114,
+              "name": "Player Count Grid",
+              "width": 502,
+              "height": 104,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "u70N4l",
+                  "name": "Player Row 1",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "spGSC",
+                      "name": "Player 3",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HyFfb",
+                          "name": "Player 3 Label",
+                          "fill": "$brand-navy",
+                          "content": "3",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "d8Nv5E",
+                      "name": "Player 4",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ehZWV",
+                          "name": "Player 4 Label",
+                          "fill": "$brand-navy",
+                          "content": "4",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Qb46O",
+                      "name": "Player 5",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Fy494",
+                          "name": "Player 5 Label",
+                          "fill": "$brand-navy",
+                          "content": "5",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HBm27",
+                      "name": "Player 6",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$brand-yellow",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FFE05B",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 8,
+                      "stroke": "$brand-navy",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$brand-navy",
+                        "offset": {
+                          "x": 0,
+                          "y": 3
+                        }
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "W1P1f",
+                          "name": "Player 6 Label",
+                          "fill": "$brand-navy",
+                          "content": "6",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uGVe6",
+                      "name": "Player 7",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uILFK",
+                          "name": "Player 7 Label",
+                          "fill": "$brand-navy",
+                          "content": "7",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c6FNn6",
+                  "name": "Player Row 2",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "y29n7x",
+                      "name": "Player 8",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F4rjm",
+                          "name": "Player 8 Label",
+                          "fill": "$brand-navy",
+                          "content": "8",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MkvnI",
+                      "name": "Player 9",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kvmxC",
+                          "name": "Player 9 Label",
+                          "fill": "$brand-navy",
+                          "content": "9",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VQz8S",
+                      "name": "Player 10",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cpR49",
+                          "name": "Player 10 Label",
+                          "fill": "$brand-navy",
+                          "content": "10",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T8DjOO",
+                      "name": "Player 11",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bwJDQ",
+                          "name": "Player 11 Label",
+                          "fill": "$brand-navy",
+                          "content": "11",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m2sA7j",
+                      "name": "Player 12",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uuqrn",
+                          "name": "Player 12 Label",
+                          "fill": "$brand-navy",
+                          "content": "12",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u0f4q",
+              "x": 36,
+              "y": 231,
+              "name": "Word Mode Row",
+              "width": 502,
+              "height": 44,
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wzJG9",
+                  "name": "Random words Selected",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$brand-yellow",
+                        "position": 0
+                      },
+                      {
+                        "color": "#FFE05B",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$brand-navy",
+                  "strokeWidth": 1,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$brand-navy",
+                    "offset": {
+                      "x": 0,
+                      "y": 3
+                    }
+                  },
+                  "gap": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Ar4C7",
+                      "name": "Random Dice",
+                      "width": 23,
+                      "height": 23,
+                      "icon": "casino",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-navy"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uRjMl",
+                      "name": "Random Label",
+                      "fill": "$brand-navy",
+                      "content": "Random words",
+                      "fontFamily": "$font",
+                      "fontSize": 17,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EvNUJ",
+                  "name": "Custom words",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "stroke": "$brand-purple",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "eU4CZ",
+                      "name": "Custom Pencil",
+                      "width": 23,
+                      "height": 23,
+                      "icon": "edit",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-navy"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BxblL",
+                      "name": "Custom Label",
+                      "fill": "$brand-navy",
+                      "content": "Custom words",
+                      "fontFamily": "$font",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "EeHKd",
+              "x": 36,
+              "y": 289,
+              "name": "Category Label",
+              "fill": "$brand-navy",
+              "content": "Category",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "IMLPb",
+              "x": 36,
+              "y": 314,
+              "name": "Category Select",
+              "width": 502,
+              "height": 37,
+              "fill": "#FFFFFF",
+              "cornerRadius": 7,
+              "stroke": "$brand-purple",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                14
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NlNtW",
+                  "name": "Category Value",
+                  "fill": "$brand-navy",
+                  "content": "All Categories",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon",
+                  "id": "O56K16",
+                  "name": "Category Chevron",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "arrow_drop_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "hP2Hm",
+              "x": 38,
+              "y": 361,
+              "name": "Category Hint",
+              "fill": "#777095",
+              "content": "Every player gets a familiar, related word.",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "bKdZ0",
+              "x": 36,
+              "y": 391,
+              "name": "Desktop Play Button",
+              "width": 502,
+              "height": 52,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$brand-yellow",
+                    "position": 0
+                  },
+                  {
+                    "color": "#FFD94E",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 8,
+              "stroke": "$brand-navy",
+              "strokeWidth": 2,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "$brand-navy",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                }
+              },
+              "gap": 18,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "u0Pqd",
+                  "name": "Play Lightning",
+                  "width": 32,
+                  "height": 32,
+                  "icon": "bolt",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                },
+                {
+                  "type": "text",
+                  "id": "MhUFF",
+                  "name": "Play Label",
+                  "fill": "$brand-navy",
+                  "content": "PLAY",
+                  "fontFamily": "$font",
+                  "fontSize": 34,
+                  "fontWeight": "900",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "ellipse",
+              "id": "LOrEb",
+              "layoutPosition": "absolute",
+              "x": 421,
+              "y": 103,
+              "name": "Player Selected Badge",
+              "fill": "$brand-navy",
+              "width": 25,
+              "height": 25,
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2
+            },
+            {
+              "type": "icon",
+              "id": "N33OSo",
+              "layoutPosition": "absolute",
+              "x": 426,
+              "y": 108,
+              "name": "Player Selected Check",
+              "width": 15,
+              "height": 15,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pavE0",
+          "x": 840,
+          "y": 579,
+          "name": "Desktop Privacy Card",
+          "width": 574,
+          "height": 275,
+          "fill": "#FFFFFFE8",
+          "cornerRadius": 16,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "s9JT2",
+              "x": 30,
+              "y": 18,
+              "name": "Privacy Title",
+              "fill": "$brand-navy",
+              "content": "Secrets stay secret.",
+              "fontFamily": "$font",
+              "fontSize": 34,
+              "fontWeight": "900",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "zpThC",
+              "x": 30,
+              "y": 65,
+              "name": "Privacy Intro",
+              "fill": "#3F3957",
+              "textGrowth": "fixed-width",
+              "width": 305,
+              "content": "The word disappears when you let go,\nswitch apps, lock the phone, or lose focus.",
+              "lineHeight": 1.25,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "ellipse",
+              "id": "kbapG",
+              "x": 31,
+              "y": 126,
+              "name": "Privacy Check Circle 1",
+              "fill": "$brand-purple",
+              "width": 21,
+              "height": 21
+            },
+            {
+              "type": "icon",
+              "id": "JCQrJ",
+              "x": 35,
+              "y": 130,
+              "name": "Privacy Check 1",
+              "width": 13,
+              "height": 13,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "tEtmN",
+              "x": 63,
+              "y": 125,
+              "name": "Privacy Point 1",
+              "fill": "#3A3451",
+              "content": "Every player sees the same\nscreen and feedback.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "ellipse",
+              "id": "WKEyZ",
+              "x": 31,
+              "y": 173,
+              "name": "Privacy Check Circle 2",
+              "fill": "$brand-purple",
+              "width": 21,
+              "height": 21
+            },
+            {
+              "type": "icon",
+              "id": "q4gyT",
+              "x": 35,
+              "y": 177,
+              "name": "Privacy Check 2",
+              "width": 13,
+              "height": 13,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "ga3Dx",
+              "x": 63,
+              "y": 172,
+              "name": "Privacy Point 2",
+              "fill": "#3A3451",
+              "content": "Finished players cannot\ngo back to their word.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "ellipse",
+              "id": "TZzrH",
+              "x": 31,
+              "y": 220,
+              "name": "Privacy Check Circle 3",
+              "fill": "$brand-purple",
+              "width": 21,
+              "height": 21
+            },
+            {
+              "type": "icon",
+              "id": "SzC0l",
+              "x": 35,
+              "y": 224,
+              "name": "Privacy Check 3",
+              "width": 13,
+              "height": 13,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "SZn1o",
+              "x": 63,
+              "y": 219,
+              "name": "Privacy Point 3",
+              "fill": "#3A3451",
+              "content": "Refresh returns to a\nsafe handoff screen.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "id": "Rd9Nc",
+              "x": 331,
+              "y": 16,
+              "name": "Privacy Phone Illustration",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/privacy-phone-card-hd.png",
+                "mode": "fit"
+              },
+              "width": 229,
+              "height": 245
+            },
+            {
+              "type": "icon",
+              "id": "MDpMl",
+              "x": 537,
+              "y": 3,
+              "name": "Privacy Sparkle",
+              "width": 35,
+              "height": 35,
+              "icon": "sparkles",
+              "library": "lucide",
+              "weight": 700,
+              "fill": "$brand-yellow"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Imw9E",
+          "x": 85,
+          "y": 869,
+          "name": "Desktop FAQ",
+          "width": 1329,
+          "height": 82,
+          "fill": "#FFFFFFAA",
+          "cornerRadius": 14,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "RjUh5",
+              "x": 497,
+              "y": 0,
+              "name": "FAQ Title",
+              "fill": "$brand-navy",
+              "content": "Good to know.",
+              "fontFamily": "$font",
+              "fontSize": 28,
+              "fontWeight": "900"
+            },
+            {
+              "type": "frame",
+              "id": "ryNUv",
+              "x": 15,
+              "y": 36,
+              "name": "FAQ Item 1",
+              "width": 425,
+              "height": 40,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": "$line",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                14
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EGUli",
+                  "name": "FAQ Question 1",
+                  "fill": "$brand-navy",
+                  "content": "Does the imposter know their role?",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "icon",
+                  "id": "Z6og7M",
+                  "name": "FAQ Chevron 1",
+                  "width": 21,
+                  "height": 21,
+                  "icon": "keyboard_arrow_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nJb2J",
+              "x": 456,
+              "y": 36,
+              "name": "FAQ Item 2",
+              "width": 425,
+              "height": 40,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": "$line",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                14
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NusRv",
+                  "name": "FAQ Question 2",
+                  "fill": "$brand-navy",
+                  "content": "Can we use our own words?",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "icon",
+                  "id": "nFxtO",
+                  "name": "FAQ Chevron 2",
+                  "width": 21,
+                  "height": 21,
+                  "icon": "keyboard_arrow_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X29XI",
+              "x": 897,
+              "y": 36,
+              "name": "FAQ Item 3",
+              "width": 425,
+              "height": 40,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": "$line",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                14
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "B04SQj",
+                  "name": "FAQ Question 3",
+                  "fill": "$brand-navy",
+                  "content": "What happens after the vote?",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "icon",
+                  "id": "NaOqt",
+                  "name": "FAQ Chevron 3",
+                  "width": 21,
+                  "height": 21,
+                  "icon": "keyboard_arrow_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Vs8pY",
+          "x": 0,
+          "y": 959,
+          "name": "Desktop Footer",
+          "width": 1536,
+          "height": 65,
+          "fill": "#FFFFFFD9",
+          "stroke": "$line",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "T8eEtn",
+              "x": 96,
+              "y": 5,
+              "name": "Footer Logo",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/quick-imposter-logo.png",
+                "mode": "fit"
+              },
+              "width": 116,
+              "height": 56
+            },
+            {
+              "type": "text",
+              "id": "fU8c3",
+              "x": 229,
+              "y": 28,
+              "name": "Footer Tagline",
+              "fill": "$muted",
+              "content": "Free to play. Built for the room you are already in.",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "jgVOK",
+              "x": 1079,
+              "y": 28,
+              "name": "Footer Links",
+              "fill": "#39334F",
+              "content": "How to play        FAQ      |      Privacy      Terms",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "E6lyLR",
+      "x": 1656,
+      "y": 0,
+      "name": "Quick Imposter — Mobile 794×1984",
+      "clip": true,
+      "width": 794,
+      "height": 1984,
+      "fill": "$page-bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "lhlb7",
+          "x": 0,
+          "y": 0,
+          "name": "Mobile Browser Chrome",
+          "width": 794,
+          "height": 107,
+          "fill": "#FFFFFF",
+          "stroke": "#D8D4E6",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "jaWO5",
+              "x": 56,
+              "y": 17,
+              "name": "Mobile Time",
+              "fill": "#0A0810",
+              "content": "9:41",
+              "fontFamily": "$font",
+              "fontSize": 25,
+              "fontWeight": "900"
+            },
+            {
+              "type": "icon",
+              "id": "tVEeJ",
+              "x": 604,
+              "y": 20,
+              "name": "Mobile Signal",
+              "width": 33,
+              "height": 33,
+              "icon": "signal_cellular_alt",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#0A0810"
+            },
+            {
+              "type": "icon",
+              "id": "bzGlu",
+              "x": 648,
+              "y": 19,
+              "name": "Mobile Wifi",
+              "width": 31,
+              "height": 31,
+              "icon": "wifi",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#0A0810"
+            },
+            {
+              "type": "icon",
+              "id": "T8ip1q",
+              "x": 687,
+              "y": 19,
+              "name": "Mobile Battery",
+              "width": 44,
+              "height": 31,
+              "icon": "battery_full",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#0A0810"
+            },
+            {
+              "type": "frame",
+              "id": "jyRpF",
+              "x": 28,
+              "y": 56,
+              "name": "Mobile Address Bar",
+              "width": 724,
+              "height": 40,
+              "fill": "#F0F0F3",
+              "cornerRadius": 22,
+              "gap": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "hjrX6",
+                  "name": "Address Lock",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "lock",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "#6D6A73"
+                },
+                {
+                  "type": "text",
+                  "id": "hbkZF",
+                  "name": "Address Text",
+                  "fill": "#33303A",
+                  "content": "quickimposter.com",
+                  "fontFamily": "$font",
+                  "fontSize": 22,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "f1SYwN",
+              "x": 700,
+              "y": 58,
+              "name": "Mobile Share",
+              "width": 28,
+              "height": 28,
+              "icon": "ios_share",
+              "library": "Material Symbols Rounded",
+              "weight": 500,
+              "fill": "#77737D"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V1GNF",
+          "x": 0,
+          "y": 107,
+          "name": "Mobile Site Header",
+          "width": 794,
+          "height": 72,
+          "fill": "#FFFFFFE8",
+          "stroke": "$line",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Y1CJ5b",
+              "x": 52,
+              "y": 7,
+              "name": "Mobile Logo",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/quick-imposter-logo.png",
+                "mode": "fit"
+              },
+              "width": 142,
+              "height": 58
+            },
+            {
+              "type": "icon",
+              "id": "yf4Vx",
+              "x": 704,
+              "y": 17,
+              "name": "Mobile Menu",
+              "width": 43,
+              "height": 43,
+              "icon": "menu",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "$brand-navy"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GmYYl",
+          "x": 42,
+          "y": 188,
+          "name": "Mobile Hero",
+          "width": 710,
+          "height": 205,
+          "layout": "none",
+          "children": [
+            {
+              "type": "icon",
+              "id": "tXi3q",
+              "x": 13,
+              "y": 0,
+              "name": "Mobile Hero Bolt",
+              "width": 54,
+              "height": 54,
+              "icon": "bolt",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "$brand-yellow"
+            },
+            {
+              "type": "ellipse",
+              "id": "N3g9SG",
+              "x": 604,
+              "y": 10,
+              "name": "Mobile Ghost",
+              "fill": "#DCCEFF66",
+              "width": 96,
+              "height": 132
+            },
+            {
+              "type": "text",
+              "id": "x33okv",
+              "x": 70,
+              "y": 17,
+              "name": "Mobile Hero Headline",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FFFFFF",
+                    "position": 0
+                  },
+                  {
+                    "color": "#B758FF",
+                    "position": 1
+                  }
+                ]
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "$brand-navy",
+                "offset": {
+                  "x": 0,
+                  "y": 7
+                }
+              },
+              "textGrowth": "fixed-width-height",
+              "width": 590,
+              "height": 135,
+              "content": "Who got the\ndifferent word?",
+              "lineHeight": 0.86,
+              "textAlign": "center",
+              "fontFamily": "$font",
+              "fontSize": 54,
+              "fontWeight": "900",
+              "letterSpacing": -2.5
+            },
+            {
+              "type": "path",
+              "id": "iw6Jt",
+              "x": 163,
+              "y": 142,
+              "name": "Mobile Hero Underline",
+              "geometry": "M0 6c80 19 210-11 292-1l-2 8c-100 10-202 14-287 0z",
+              "viewBox": [
+                0,
+                0,
+                292,
+                30
+              ],
+              "fill": "$brand-yellow",
+              "width": 292,
+              "height": 17
+            },
+            {
+              "type": "text",
+              "id": "a4iOF",
+              "x": 118,
+              "y": 161,
+              "name": "Mobile Hero Subtitle",
+              "fill": "#35304B",
+              "textGrowth": "fixed-width",
+              "width": 474,
+              "content": "Pass the phone. Find the imposter.\nStart in 30 seconds.",
+              "lineHeight": 1.12,
+              "textAlign": "center",
+              "fontFamily": "$font",
+              "fontSize": 19,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z3CFM",
+          "x": 43,
+          "y": 400,
+          "name": "Mobile Game Setup",
+          "width": 706,
+          "height": 487,
+          "fill": "#FFFFFFF2",
+          "cornerRadius": 16,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#2B15501A",
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "blur": 16
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "PLbMa",
+              "x": 30,
+              "y": 17,
+              "name": "Mobile Setup Eyebrow",
+              "fill": "$brand-purple",
+              "content": "SET UP YOUR GAME",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "900",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "SUEeY",
+              "x": 30,
+              "y": 42,
+              "name": "Mobile Setup Title",
+              "fill": "$brand-navy",
+              "content": "How many are playing?",
+              "fontFamily": "$font",
+              "fontSize": 31,
+              "fontWeight": "900",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "VLx7W",
+              "x": 30,
+              "y": 81,
+              "name": "Mobile Setup Description",
+              "fill": "#343047",
+              "content": "Choose everyone who will receive a secret word.",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "fgBvD",
+              "x": 30,
+              "y": 111,
+              "name": "Mobile Player Grid",
+              "width": 646,
+              "height": 113,
+              "layout": "vertical",
+              "gap": 11,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "x8SYH",
+                  "name": "Mobile Player Row 1",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "gap": 25,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qnIIl",
+                      "name": "Mobile Player 3",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vsmVv",
+                          "name": "Mobile Player 3 Label",
+                          "fill": "$brand-navy",
+                          "content": "3",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wvs1r",
+                      "name": "Mobile Player 4",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "U9qeU",
+                          "name": "Mobile Player 4 Label",
+                          "fill": "$brand-navy",
+                          "content": "4",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MgQxB",
+                      "name": "Mobile Player 5",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "j8MH7s",
+                          "name": "Mobile Player 5 Label",
+                          "fill": "$brand-navy",
+                          "content": "5",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qL7Gp",
+                      "name": "Mobile Player 6",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "$brand-yellow",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FFE05B",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 8,
+                      "stroke": "$brand-navy",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "$brand-navy",
+                        "offset": {
+                          "x": 0,
+                          "y": 4
+                        }
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P9mOd",
+                          "name": "Mobile Player 6 Label",
+                          "fill": "$brand-navy",
+                          "content": "6",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X6iS34",
+                      "name": "Mobile Player 7",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "e615OL",
+                          "name": "Mobile Player 7 Label",
+                          "fill": "$brand-navy",
+                          "content": "7",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CSzKl",
+                  "name": "Mobile Player Row 2",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "gap": 25,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dUGWA",
+                      "name": "Mobile Player 8",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v2fy3m",
+                          "name": "Mobile Player 8 Label",
+                          "fill": "$brand-navy",
+                          "content": "8",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hEEei",
+                      "name": "Mobile Player 9",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vtAqS",
+                          "name": "Mobile Player 9 Label",
+                          "fill": "$brand-navy",
+                          "content": "9",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SC2Ya",
+                      "name": "Mobile Player 10",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LDEyF",
+                          "name": "Mobile Player 10 Label",
+                          "fill": "$brand-navy",
+                          "content": "10",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OyHyM",
+                      "name": "Mobile Player 11",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "V1ao1",
+                          "name": "Mobile Player 11 Label",
+                          "fill": "$brand-navy",
+                          "content": "11",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Upbb0",
+                      "name": "Mobile Player 12",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xEHLm",
+                          "name": "Mobile Player 12 Label",
+                          "fill": "$brand-navy",
+                          "content": "12",
+                          "fontFamily": "$font",
+                          "fontSize": 23,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kyS4m",
+              "x": 30,
+              "y": 240,
+              "name": "Mobile Word Modes",
+              "width": 646,
+              "height": 47,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "K0PjK",
+                  "name": "Mobile Random Selected",
+                  "width": "fill_container",
+                  "height": 47,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$brand-yellow",
+                        "position": 0
+                      },
+                      {
+                        "color": "#FFE05B",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$brand-navy",
+                  "strokeWidth": 1,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "$brand-navy",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    }
+                  },
+                  "gap": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "WbSzu",
+                      "name": "Mobile Dice",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "casino",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-navy"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xibbp",
+                      "name": "Mobile Random Label",
+                      "fill": "$brand-navy",
+                      "content": "Random words",
+                      "fontFamily": "$font",
+                      "fontSize": 18,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jYApy",
+                  "name": "Mobile Custom",
+                  "width": "fill_container",
+                  "height": 47,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "stroke": "$brand-purple",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ZSVGc",
+                      "name": "Mobile Custom Icon",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "edit",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-navy"
+                    },
+                    {
+                      "type": "text",
+                      "id": "goc7H",
+                      "name": "Mobile Custom Label",
+                      "fill": "$brand-navy",
+                      "content": "Custom words",
+                      "fontFamily": "$font",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "VIitH",
+              "x": 30,
+              "y": 303,
+              "name": "Mobile Category Label",
+              "fill": "$brand-navy",
+              "content": "Category",
+              "fontFamily": "$font",
+              "fontSize": 17,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "imcei",
+              "x": 30,
+              "y": 331,
+              "name": "Mobile Category Select",
+              "width": 646,
+              "height": 42,
+              "fill": "#FFFFFF",
+              "cornerRadius": 7,
+              "stroke": "$brand-purple",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                15
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EfxUB",
+                  "name": "Mobile Category Value",
+                  "fill": "$brand-navy",
+                  "content": "All Categories",
+                  "fontFamily": "$font",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon",
+                  "id": "Y3S1kn",
+                  "name": "Mobile Category Chevron",
+                  "width": 25,
+                  "height": 25,
+                  "icon": "arrow_drop_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "BoZGB",
+              "x": 31,
+              "y": 384,
+              "name": "Mobile Category Hint",
+              "fill": "#777095",
+              "content": "Every player gets a familiar, related word.",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "i0dBYO",
+              "x": 30,
+              "y": 421,
+              "name": "Mobile Play Button",
+              "width": 646,
+              "height": 52,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$brand-yellow",
+                    "position": 0
+                  },
+                  {
+                    "color": "#FFD94E",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 8,
+              "stroke": "$brand-navy",
+              "strokeWidth": 2,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "$brand-navy",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                }
+              },
+              "gap": 18,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "yMopK",
+                  "name": "Mobile Play Bolt",
+                  "width": 32,
+                  "height": 32,
+                  "icon": "bolt",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                },
+                {
+                  "type": "text",
+                  "id": "I7Dont",
+                  "name": "Mobile Play Label",
+                  "fill": "$brand-navy",
+                  "content": "PLAY",
+                  "fontFamily": "$font",
+                  "fontSize": 34,
+                  "fontWeight": "900",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "ellipse",
+              "id": "OEB8p",
+              "x": 520,
+              "y": 102,
+              "name": "Mobile Player Selected Badge",
+              "fill": "$brand-navy",
+              "width": 24,
+              "height": 24,
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2
+            },
+            {
+              "type": "icon",
+              "id": "rV8oi",
+              "x": 525,
+              "y": 107,
+              "name": "Mobile Player Selected Check",
+              "width": 14,
+              "height": 14,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "ellipse",
+              "id": "jO64R",
+              "x": 326,
+              "y": 230,
+              "name": "Mobile Mode Selected Badge",
+              "fill": "$brand-navy",
+              "width": 24,
+              "height": 24,
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2
+            },
+            {
+              "type": "icon",
+              "id": "SWZiA",
+              "x": 331,
+              "y": 235,
+              "name": "Mobile Mode Selected Check",
+              "width": 14,
+              "height": 14,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LqrSM",
+          "x": 41,
+          "y": 905,
+          "name": "Mobile Benefits",
+          "width": 711,
+          "height": 189,
+          "fill": "#FFFFFFB8",
+          "cornerRadius": 14,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "children": [
+            {
+              "type": "frame",
+              "id": "AgNcB",
+              "name": "Mobile Benefit 1",
+              "width": "fill_container",
+              "height": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "right": 1
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                16,
+                12
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "SMRfm",
+                  "name": "Mobile Benefit Icon 1",
+                  "width": 50,
+                  "height": 50,
+                  "icon": "bolt",
+                  "library": "lucide",
+                  "fill": "$brand-purple"
+                },
+                {
+                  "type": "text",
+                  "id": "g8ZH8",
+                  "name": "Mobile Benefit Title 1",
+                  "fill": "$brand-navy",
+                  "content": "Ready in\n30 seconds",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "$font",
+                  "fontSize": 18,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "OoIsh",
+                  "name": "Mobile Benefit Body 1",
+                  "fill": "$muted",
+                  "content": "Start fast.\nPlay right away.",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dD1mV",
+              "name": "Mobile Benefit 2",
+              "width": "fill_container",
+              "height": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "right": 1
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                16,
+                12
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "oEihQ",
+                  "name": "Mobile Benefit Icon 2",
+                  "width": 50,
+                  "height": 50,
+                  "icon": "smartphone",
+                  "library": "lucide",
+                  "fill": "$brand-purple"
+                },
+                {
+                  "type": "text",
+                  "id": "HWDad",
+                  "name": "Mobile Benefit Title 2",
+                  "fill": "$brand-navy",
+                  "content": "One phone\nfor everyone",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "$font",
+                  "fontSize": 18,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "D6ay0I",
+                  "name": "Mobile Benefit Body 2",
+                  "fill": "$muted",
+                  "content": "Pass it around.\nThat’s it.",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "KeW0T",
+              "name": "Mobile Benefit 3",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                16,
+                12
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "Z1zCX",
+                  "name": "Mobile Benefit Icon 3",
+                  "width": 50,
+                  "height": 50,
+                  "icon": "shield-check",
+                  "library": "lucide",
+                  "fill": "$brand-purple"
+                },
+                {
+                  "type": "text",
+                  "id": "DrN8M",
+                  "name": "Mobile Benefit Title 3",
+                  "fill": "$brand-navy",
+                  "content": "No signup\nor download",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "$font",
+                  "fontSize": 18,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "hqiOG",
+                  "name": "Mobile Benefit Body 3",
+                  "fill": "$muted",
+                  "content": "Open the site\nand play.",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lzOo7",
+          "x": 47,
+          "y": 1115,
+          "name": "Mobile How To Play",
+          "width": 700,
+          "height": 378,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "PXeuX",
+              "x": 0,
+              "y": 0,
+              "name": "Mobile How Eyebrow",
+              "fill": "$brand-purple",
+              "content": "HOW TO PLAY",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "900",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "text",
+              "id": "aGOQM",
+              "x": 0,
+              "y": 26,
+              "name": "Mobile How Title",
+              "fill": "$brand-navy",
+              "content": "A whole game in one hand.",
+              "fontFamily": "$font",
+              "fontSize": 31,
+              "fontWeight": "900",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "YKz4C",
+              "x": 0,
+              "y": 69,
+              "name": "Mobile How Intro",
+              "fill": "#39334F",
+              "content": "Set up once, then pass the phone clockwise.\nThe site handles every secret.",
+              "lineHeight": 1.25,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "N8ynDV",
+              "x": 0,
+              "y": 116,
+              "name": "Mobile Steps",
+              "width": 700,
+              "height": 262,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cALcR",
+                  "name": "Mobile Step 01",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFFC8",
+                  "cornerRadius": 12,
+                  "stroke": "$line",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w14S8t",
+                      "x": 24,
+                      "y": 4,
+                      "name": "Mobile Step Number 01",
+                      "fill": "#BCA5EE",
+                      "content": "01",
+                      "fontFamily": "$font",
+                      "fontSize": 52,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "Sxsj2",
+                      "x": 155,
+                      "y": 16,
+                      "name": "Mobile Step Icon 01",
+                      "width": 48,
+                      "height": 48,
+                      "icon": "groups",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PLjBW",
+                      "x": 267,
+                      "y": 16,
+                      "name": "Mobile Step Title 01",
+                      "fill": "$brand-navy",
+                      "content": "Choose your group",
+                      "fontFamily": "$font",
+                      "fontSize": 18,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tPBZM",
+                      "x": 267,
+                      "y": 43,
+                      "name": "Mobile Step Body 01",
+                      "fill": "$muted",
+                      "content": "Pick 3–12 players and\na word category.",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "RARLj",
+                      "x": 637,
+                      "y": 28,
+                      "name": "Mobile Step Chevron 01",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "chevron_right",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D5mCZR",
+                  "name": "Mobile Step 02",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFFC8",
+                  "cornerRadius": 12,
+                  "stroke": "$line",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mz9eV",
+                      "x": 24,
+                      "y": 4,
+                      "name": "Mobile Step Number 02",
+                      "fill": "#BCA5EE",
+                      "content": "02",
+                      "fontFamily": "$font",
+                      "fontSize": 52,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "f0jRG",
+                      "x": 155,
+                      "y": 16,
+                      "name": "Mobile Step Icon 02",
+                      "width": 48,
+                      "height": 48,
+                      "icon": "visibility",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZXWgD",
+                      "x": 267,
+                      "y": 16,
+                      "name": "Mobile Step Title 02",
+                      "fill": "$brand-navy",
+                      "content": "Pass and peek",
+                      "fontFamily": "$font",
+                      "fontSize": 18,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GeTRV",
+                      "x": 267,
+                      "y": 43,
+                      "name": "Mobile Step Body 02",
+                      "fill": "$muted",
+                      "content": "Each player holds to\nreveal one private word.",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "xJV9R",
+                      "x": 637,
+                      "y": 28,
+                      "name": "Mobile Step Chevron 02",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "chevron_right",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EEuwo",
+                  "name": "Mobile Step 03",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFFC8",
+                  "cornerRadius": 12,
+                  "stroke": "$line",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uv9Eh",
+                      "x": 24,
+                      "y": 4,
+                      "name": "Mobile Step Number 03",
+                      "fill": "#BCA5EE",
+                      "content": "03",
+                      "fontFamily": "$font",
+                      "fontSize": 52,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "OzrzR",
+                      "x": 155,
+                      "y": 16,
+                      "name": "Mobile Step Icon 03",
+                      "width": 48,
+                      "height": 48,
+                      "icon": "forum",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K0s28p",
+                      "x": 267,
+                      "y": 16,
+                      "name": "Mobile Step Title 03",
+                      "fill": "$brand-navy",
+                      "content": "Describe and vote",
+                      "fontFamily": "$font",
+                      "fontSize": 18,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lZeaX",
+                      "x": 267,
+                      "y": 43,
+                      "name": "Mobile Step Body 03",
+                      "fill": "$muted",
+                      "content": "Give clues, spot the odd word,\nthen reveal the imposter.",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "efEPC",
+                      "x": 637,
+                      "y": 28,
+                      "name": "Mobile Step Chevron 03",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "chevron_right",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$brand-purple"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V7R81",
+          "x": 43,
+          "y": 1510,
+          "name": "Mobile Privacy Card",
+          "width": 706,
+          "height": 242,
+          "fill": "#FFFFFFE8",
+          "cornerRadius": 16,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "W84RU",
+              "x": 20,
+              "y": 13,
+              "name": "Mobile Privacy Phone",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/privacy-phone-card-hd.png",
+                "mode": "fit"
+              },
+              "width": 314,
+              "height": 218
+            },
+            {
+              "type": "text",
+              "id": "h2ve9",
+              "x": 350,
+              "y": 18,
+              "name": "Mobile Privacy Title",
+              "fill": "$brand-navy",
+              "content": "Secrets stay secret.",
+              "fontFamily": "$font",
+              "fontSize": 28,
+              "fontWeight": "900",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "CFcTC",
+              "x": 350,
+              "y": 59,
+              "name": "Mobile Privacy Intro",
+              "fill": "#3F3957",
+              "textGrowth": "fixed-width",
+              "width": 330,
+              "content": "The word disappears when you\nlet go, switch apps, lock the phone,\nor lose focus.",
+              "lineHeight": 1.15,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "ellipse",
+              "id": "fEz0K",
+              "x": 350,
+              "y": 115,
+              "name": "Mobile Privacy Check Circle 1",
+              "fill": "$brand-purple",
+              "width": 18,
+              "height": 18
+            },
+            {
+              "type": "icon",
+              "id": "GancW",
+              "x": 353,
+              "y": 118,
+              "name": "Mobile Privacy Check 1",
+              "width": 12,
+              "height": 12,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "G13OD",
+              "x": 379,
+              "y": 113,
+              "name": "Mobile Privacy Point 1",
+              "fill": "#3A3451",
+              "content": "Every player sees the same\nscreen and feedback.",
+              "lineHeight": 1.05,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "ellipse",
+              "id": "dW1iD",
+              "x": 350,
+              "y": 152,
+              "name": "Mobile Privacy Check Circle 2",
+              "fill": "$brand-purple",
+              "width": 18,
+              "height": 18
+            },
+            {
+              "type": "icon",
+              "id": "p2DcU5",
+              "x": 353,
+              "y": 155,
+              "name": "Mobile Privacy Check 2",
+              "width": 12,
+              "height": 12,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "l64vd",
+              "x": 379,
+              "y": 150,
+              "name": "Mobile Privacy Point 2",
+              "fill": "#3A3451",
+              "content": "Finished players cannot go\nback to their word.",
+              "lineHeight": 1.05,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "ellipse",
+              "id": "lcIUq",
+              "x": 350,
+              "y": 189,
+              "name": "Mobile Privacy Check Circle 3",
+              "fill": "$brand-purple",
+              "width": 18,
+              "height": 18
+            },
+            {
+              "type": "icon",
+              "id": "ZoOe5",
+              "x": 353,
+              "y": 192,
+              "name": "Mobile Privacy Check 3",
+              "width": 12,
+              "height": 12,
+              "icon": "check",
+              "library": "Material Symbols Rounded",
+              "weight": 700,
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "TL3vC",
+              "x": 379,
+              "y": 187,
+              "name": "Mobile Privacy Point 3",
+              "fill": "#3A3451",
+              "content": "Refresh returns to a safe\nhandoff screen.",
+              "lineHeight": 1.05,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "qYehu",
+              "x": 306,
+              "y": 5,
+              "name": "Mobile Privacy Sparkle",
+              "width": 34,
+              "height": 34,
+              "icon": "sparkles",
+              "library": "lucide",
+              "fill": "$brand-yellow"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zs1zi",
+          "x": 51,
+          "y": 1766,
+          "name": "Mobile FAQ",
+          "width": 692,
+          "height": 132,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "oIGPu",
+              "x": 0,
+              "y": 0,
+              "name": "Mobile FAQ Title",
+              "fill": "$brand-navy",
+              "content": "Good to know.",
+              "fontFamily": "$font",
+              "fontSize": 25,
+              "fontWeight": "900"
+            },
+            {
+              "type": "frame",
+              "id": "nruPe",
+              "x": 0,
+              "y": 35,
+              "name": "Mobile FAQ Item 1",
+              "width": 692,
+              "height": 33,
+              "fill": "#FFFFFF",
+              "cornerRadius": [
+                8,
+                8,
+                0,
+                0
+              ],
+              "stroke": "$line",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                15
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "e33E9",
+                  "name": "Mobile FAQ Question 1",
+                  "fill": "$brand-navy",
+                  "content": "Does the imposter know their role?",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "icon",
+                  "id": "n2v6T",
+                  "name": "Mobile FAQ Chevron 1",
+                  "width": 21,
+                  "height": 21,
+                  "icon": "keyboard_arrow_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uCwyJ",
+              "x": 0,
+              "y": 67,
+              "name": "Mobile FAQ Item 2",
+              "width": 692,
+              "height": 33,
+              "fill": "#FFFFFF",
+              "stroke": "$line",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                15
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a6C8y",
+                  "name": "Mobile FAQ Question 2",
+                  "fill": "$brand-navy",
+                  "content": "Can we use our own words?",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "icon",
+                  "id": "hw7y9",
+                  "name": "Mobile FAQ Chevron 2",
+                  "width": 21,
+                  "height": 21,
+                  "icon": "keyboard_arrow_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gqNWS",
+              "x": 0,
+              "y": 99,
+              "name": "Mobile FAQ Item 3",
+              "width": 692,
+              "height": 33,
+              "fill": "#FFFFFF",
+              "cornerRadius": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "stroke": "$line",
+              "strokeWidth": 1,
+              "padding": [
+                0,
+                15
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iMmWk",
+                  "name": "Mobile FAQ Question 3",
+                  "fill": "$brand-navy",
+                  "content": "What happens after the vote?",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "icon",
+                  "id": "VoKEI",
+                  "name": "Mobile FAQ Chevron 3",
+                  "width": 21,
+                  "height": 21,
+                  "icon": "keyboard_arrow_down",
+                  "library": "Material Symbols Rounded",
+                  "weight": 700,
+                  "fill": "$brand-navy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "F8uOp",
+          "x": 0,
+          "y": 1915,
+          "name": "Mobile Footer",
+          "width": 794,
+          "height": 69,
+          "fill": "#FFFFFFDE",
+          "stroke": "$line",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "rBj69",
+              "x": 85,
+              "y": 4,
+              "name": "Mobile Footer Logo",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/quick-imposter-logo.png",
+                "mode": "fit"
+              },
+              "width": 139,
+              "height": 61
+            },
+            {
+              "type": "text",
+              "id": "LJARl",
+              "x": 247,
+              "y": 22,
+              "name": "Mobile Footer Copy",
+              "fill": "$muted",
+              "content": "Free to play.\nBuilt for the room you are already in.",
+              "lineHeight": 1.2,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "brand-navy": {
+      "type": "color",
+      "value": "#160B4F"
+    },
+    "brand-purple": {
+      "type": "color",
+      "value": "#6D28D9"
+    },
+    "brand-violet": {
+      "type": "color",
+      "value": "#8B3DFF"
+    },
+    "brand-lilac": {
+      "type": "color",
+      "value": "#D9C8FF"
+    },
+    "brand-yellow": {
+      "type": "color",
+      "value": "#FFC914"
+    },
+    "brand-gold": {
+      "type": "color",
+      "value": "#FFB800"
+    },
+    "page-bg": {
+      "type": "color",
+      "value": "#FEFDFF"
+    },
+    "muted": {
+      "type": "color",
+      "value": "#5D5677"
+    },
+    "line": {
+      "type": "color",
+      "value": "#B9A5ED"
+    },
+    "font": {
+      "type": "string",
+      "value": "Nunito Sans"
+    }
+  },
+  "fileToken": "96f92263-9537-4754-a9f5-40c18e0995d9"
+}

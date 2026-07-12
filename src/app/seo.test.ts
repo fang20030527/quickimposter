@@ -43,7 +43,7 @@ describe("homepage SEO", () => {
     );
   });
 
-  it("keeps robots and sitemap on the canonical origin", () => {
+  it("advertises the canonical sitemap in robots.txt", () => {
     expect(robots()).toEqual({
       rules: {
         userAgent: "*",
@@ -52,12 +52,14 @@ describe("homepage SEO", () => {
       sitemap: `${SITE_URL}/sitemap.xml`,
       host: SITE_URL,
     });
-    expect(sitemap()).toEqual([
-      {
-        url: SITE_URL,
-        changeFrequency: "weekly",
-        priority: 1,
-      },
-    ]);
+  });
+
+  it("lists only the canonical HTTPS homepage in the sitemap", () => {
+    const entries = sitemap();
+
+    expect(entries).toEqual([{ url: SITE_URL }]);
+    expect(entries.every(({ url }) => new URL(url).protocol === "https:")).toBe(
+      true,
+    );
   });
 });
