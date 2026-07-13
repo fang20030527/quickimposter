@@ -94,11 +94,18 @@ a { color: inherit; }
   gap: clamp(38px, 7vw, 108px);
   align-items: center;
 }
-.hero-copy { position: relative; max-width: 630px; }
-.hero-question { display: block; margin: 0 0 12px; font-size: 13px; font-weight: 850; letter-spacing: 0.08em; text-transform: uppercase; }
-.hero-copy h1 { font-size: clamp(3rem, 5.2vw, 5.6rem); line-height: 0.92; letter-spacing: -0.065em; max-width: 11ch; margin: 0; text-transform: uppercase; font-weight: 930; }
+.hero-copy { position: relative; max-width: 700px; }
+.hero-artwork {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  margin: -10px 0 10px;
+}
+.hero-artwork img { pointer-events: none; user-select: none; }
+.hero-artwork-background { z-index: 0; object-fit: fill; }
+.hero-artwork-headline { z-index: 1; object-fit: contain; transform: scale(1.02); }
 .hero-copy > p { margin: 26px 0 22px; max-width: 23ch; font-size: clamp(1.05rem, 1.8vw, 1.35rem); line-height: 1.45; color: var(--muted); font-weight: 570; }
-.brand-logo-hero { position: absolute; right: -2%; top: -52px; width: 148px; height: 148px; transform: rotate(6deg); box-shadow: 7px 7px 0 var(--accent); }
 .down-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 780; text-underline-offset: 5px; }
 .game-column { width: 100%; }
 .game-experience { width: 100%; }
@@ -228,8 +235,6 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 4px soli
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 34px; padding-top: 42px; }
   .hero-copy { max-width: 100%; }
-  .hero-copy h1 { max-width: 11ch; font-size: clamp(3.2rem, 11vw, 5.8rem); }
-  .brand-logo-hero { right: 0; top: -34px; width: 112px; height: 112px; }
   .game-column { max-width: 620px; }
   .promise-strip { grid-template-columns: 1fr; gap: 2px; }
   .promise-strip div:first-child { border-radius: var(--radius) var(--radius) 0 0; }
@@ -245,10 +250,9 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 4px soli
   .site-header nav a { font-size: 12px; }
   .brand-lockup > span:last-child { display: none; }
   .hero { min-height: calc(100dvh - 64px); padding: 18px 16px 46px; gap: 16px; }
-  .hero-question { margin-bottom: 7px; font-size: 10px; }
-  .hero-copy h1 { max-width: none; font-size: clamp(2.35rem, 10.5vw, 2.9rem); line-height: 0.92; }
+  .hero-artwork { margin: 0 0 6px; aspect-ratio: 2.55 / 1; }
   .hero-copy > p { margin: 11px 0 0; max-width: none; font-size: 14px; line-height: 1.35; }
-  .brand-logo-hero, .down-link { display: none; }
+  .down-link { display: none; }
   .setup-panel, .stage-panel { padding: 16px; box-shadow: 6px 6px 0 var(--accent); }
   .section-heading h2 { margin: 5px 0 6px; font-size: 1.8rem; }
   .section-heading > p { font-size: 13px; }

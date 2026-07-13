@@ -146,110 +146,34 @@
           "layout": "none",
           "children": [
             {
-              "type": "icon",
-              "id": "d3mubq",
+              "type": "rectangle",
+              "id": "pFStH",
               "x": 0,
-              "y": 5,
-              "name": "Hero Lightning",
-              "width": 64,
-              "height": 64,
-              "icon": "bolt",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "$brand-yellow"
-            },
-            {
-              "type": "ellipse",
-              "id": "cSOHv",
-              "x": 586,
-              "y": 38,
-              "name": "Hero Ghost Head",
-              "fill": "#DCCEFF66",
-              "width": 114,
-              "height": 114
-            },
-            {
-              "type": "ellipse",
-              "id": "c64Gir",
-              "x": 612,
-              "y": 76,
-              "name": "Hero Ghost Eye Left",
-              "rotation": -20,
-              "fill": "#B39AE866",
-              "width": 24,
-              "height": 13
-            },
-            {
-              "type": "ellipse",
-              "id": "AeRHA",
-              "x": 651,
-              "y": 76,
-              "name": "Hero Ghost Eye Right",
-              "rotation": 20,
-              "fill": "#B39AE866",
-              "width": 24,
-              "height": 13
-            },
-            {
-              "type": "text",
-              "id": "raP1Z",
-              "x": 20,
-              "y": 52,
-              "name": "Hero Headline",
+              "y": 0,
+              "name": "Generated Hero Background — Desktop",
               "fill": {
-                "type": "gradient",
-                "gradientType": "linear",
+                "type": "image",
                 "enabled": true,
-                "rotation": 180,
-                "size": {
-                  "height": 1
-                },
-                "colors": [
-                  {
-                    "color": "#FFFFFF",
-                    "position": 0
-                  },
-                  {
-                    "color": "#C66BFF",
-                    "position": 1
-                  }
-                ]
+                "url": "public/generated/hero-background-illustration.png",
+                "mode": "stretch"
               },
-              "effect": {
-                "type": "shadow",
-                "shadowType": "outer",
-                "color": "$brand-navy",
-                "offset": {
-                  "x": 0,
-                  "y": 8
-                }
-              },
-              "textGrowth": "fixed-width-height",
-              "width": 670,
-              "height": 190,
-              "content": "Who got the\ndifferent word?",
-              "lineHeight": 0.9,
-              "fontFamily": "$font",
-              "fontSize": 73,
-              "fontWeight": "900",
-              "letterSpacing": -3
+              "width": 700,
+              "height": 270
             },
             {
-              "type": "path",
-              "id": "cWfka",
-              "x": 48,
-              "y": 247,
-              "name": "Hero Yellow Underline",
-              "geometry": "M0 6c90 22 220-11 330-1l-2 8c-128 11-232 18-324 1z",
-              "viewBox": [
-                0,
-                0,
-                330,
-                32
-              ],
-              "fill": "$brand-yellow",
-              "width": 330,
-              "height": 18
+              "type": "rectangle",
+              "id": "O0asyC",
+              "x": 20,
+              "y": 46,
+              "name": "Generated Hero Headline — Desktop",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/generated/hero-headline-art.png",
+                "mode": "stretch"
+              },
+              "width": 670,
+              "height": 205
             },
             {
               "type": "text",
@@ -1947,105 +1871,34 @@
           "layout": "none",
           "children": [
             {
-              "type": "icon",
-              "id": "tXi3q",
-              "x": 13,
+              "type": "rectangle",
+              "id": "Pu6H9",
+              "x": 145,
               "y": 0,
-              "name": "Mobile Hero Bolt",
-              "width": 54,
-              "height": 54,
-              "icon": "bolt",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "$brand-yellow"
-            },
-            {
-              "type": "ellipse",
-              "id": "N3g9SG",
-              "x": 604,
-              "y": 10,
-              "name": "Mobile Ghost",
-              "fill": "#DCCEFF66",
-              "width": 96,
-              "height": 132
-            },
-            {
-              "type": "text",
-              "id": "x33okv",
-              "x": 70,
-              "y": 17,
-              "name": "Mobile Hero Headline",
+              "name": "Generated Hero Background — Mobile",
               "fill": {
-                "type": "gradient",
-                "gradientType": "linear",
+                "type": "image",
                 "enabled": true,
-                "rotation": 180,
-                "size": {
-                  "height": 1
-                },
-                "colors": [
-                  {
-                    "color": "#FFFFFF",
-                    "position": 0
-                  },
-                  {
-                    "color": "#B758FF",
-                    "position": 1
-                  }
-                ]
+                "url": "public/generated/hero-background-illustration.png",
+                "mode": "stretch"
               },
-              "effect": {
-                "type": "shadow",
-                "shadowType": "outer",
-                "color": "$brand-navy",
-                "offset": {
-                  "x": 0,
-                  "y": 7
-                }
-              },
-              "textGrowth": "fixed-width-height",
-              "width": 590,
-              "height": 135,
-              "content": "Who got the\ndifferent word?",
-              "lineHeight": 0.86,
-              "textAlign": "center",
-              "fontFamily": "$font",
-              "fontSize": 54,
-              "fontWeight": "900",
-              "letterSpacing": -2.5
+              "width": 410,
+              "height": 205
             },
             {
-              "type": "path",
-              "id": "iw6Jt",
-              "x": 163,
-              "y": 142,
-              "name": "Mobile Hero Underline",
-              "geometry": "M0 6c80 19 210-11 292-1l-2 8c-100 10-202 14-287 0z",
-              "viewBox": [
-                0,
-                0,
-                292,
-                30
-              ],
-              "fill": "$brand-yellow",
-              "width": 292,
-              "height": 17
-            },
-            {
-              "type": "text",
-              "id": "a4iOF",
-              "x": 118,
-              "y": 161,
-              "name": "Mobile Hero Subtitle",
-              "fill": "#35304B",
-              "textGrowth": "fixed-width",
-              "width": 474,
-              "content": "Pass the phone. Find the imposter.\nStart in 30 seconds.",
-              "lineHeight": 1.12,
-              "textAlign": "center",
-              "fontFamily": "$font",
-              "fontSize": 19,
-              "fontWeight": "600"
+              "type": "rectangle",
+              "id": "w54Q6O",
+              "x": 47.5,
+              "y": 0,
+              "name": "Generated Hero Headline — Mobile",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "public/generated/hero-headline-art.png",
+                "mode": "stretch"
+              },
+              "width": 615,
+              "height": 205
             }
           ]
         },

@@ -8,6 +8,7 @@ import {
 
 import { BrandLogo } from "@/components/brand-logo";
 import { GameExperience } from "@/components/game/game-experience";
+import { HeroArtwork } from "@/components/hero-artwork";
 
 import {
   createHomepageStructuredData,
@@ -40,9 +41,10 @@ export default function Home() {
 
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <BrandLogo variant="hero" />
-          <span className="hero-question">Who got the different word?</span>
-          <h1 id="hero-title">Free Imposter Game Online for One Phone</h1>
+          <HeroArtwork />
+          <h1 className="sr-only" id="hero-title">
+            Free Imposter Game Online for One Phone
+          </h1>
           <p>
             Generate secret words for 3–12 players, pass the phone, and find
             the imposter. No signup or download.
