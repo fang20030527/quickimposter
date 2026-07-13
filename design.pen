@@ -9,7 +9,7 @@
       "name": "Quick Imposter — Desktop 1536×1024",
       "clip": true,
       "width": 1536,
-      "height": 1024,
+      "height": 1110,
       "fill": "$page-bg",
       "layout": "none",
       "children": [
@@ -46,8 +46,8 @@
             {
               "type": "text",
               "id": "sZiCy",
-              "x": 1053,
-              "y": 34,
+              "x": 1212,
+              "y": 30,
               "name": "How to play Nav",
               "fill": "$brand-navy",
               "content": "How to play",
@@ -58,80 +58,14 @@
             {
               "type": "text",
               "id": "rAYx9",
-              "x": 1213,
-              "y": 34,
+              "x": 1372,
+              "y": 30,
               "name": "FAQ Nav",
               "fill": "$brand-navy",
               "content": "FAQ",
               "fontFamily": "$font",
               "fontSize": 18,
               "fontWeight": "700"
-            },
-            {
-              "type": "frame",
-              "id": "LRyyq",
-              "x": 1290,
-              "y": 17,
-              "name": "Play now Button",
-              "width": 158,
-              "height": 52,
-              "fill": {
-                "type": "gradient",
-                "gradientType": "linear",
-                "enabled": true,
-                "rotation": 180,
-                "size": {
-                  "height": 1
-                },
-                "colors": [
-                  {
-                    "color": "$brand-yellow",
-                    "position": 0
-                  },
-                  {
-                    "color": "#FFD84D",
-                    "position": 1
-                  }
-                ]
-              },
-              "cornerRadius": 8,
-              "stroke": "$brand-navy",
-              "strokeWidth": 1,
-              "effect": {
-                "type": "shadow",
-                "shadowType": "outer",
-                "color": "$brand-navy",
-                "offset": {
-                  "x": 0,
-                  "y": 3
-                }
-              },
-              "gap": 12,
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "hAndJ",
-                  "name": "Play now Lightning",
-                  "width": 24,
-                  "height": 24,
-                  "icon": "bolt",
-                  "library": "Material Symbols Rounded",
-                  "weight": 700,
-                  "fill": "$brand-navy"
-                },
-                {
-                  "type": "text",
-                  "id": "w0sZA",
-                  "name": "Play now Label",
-                  "fill": "$brand-navy",
-                  "content": "Play now",
-                  "fontFamily": "$font",
-                  "fontSize": 18,
-                  "fontWeight": "800"
-                }
-              ]
             }
           ]
         },
@@ -148,8 +82,8 @@
             {
               "type": "rectangle",
               "id": "pFStH",
-              "x": 0,
-              "y": 0,
+              "x": -23,
+              "y": -41,
               "name": "Generated Hero Background — Desktop",
               "fill": {
                 "type": "image",
@@ -157,14 +91,14 @@
                 "url": "public/generated/hero-background-illustration.png",
                 "mode": "stretch"
               },
-              "width": 700,
-              "height": 270
+              "width": 762,
+              "height": 294
             },
             {
               "type": "rectangle",
               "id": "O0asyC",
-              "x": 20,
-              "y": 46,
+              "x": 0,
+              "y": 48,
               "name": "Generated Hero Headline — Desktop",
               "fill": {
                 "type": "image",
@@ -189,7 +123,7 @@
               "textAlign": "center",
               "fontFamily": "$font",
               "fontSize": 27,
-              "fontWeight": "500"
+              "fontWeight": "300"
             },
             {
               "type": "frame",
@@ -219,15 +153,19 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "icon",
-                      "id": "tdrxF",
-                      "name": "Benefit Icon 1",
+                      "type": "path",
+                      "id": "ch9Vr",
+                      "name": "Benefit SVG Vector — Fast Start",
+                      "geometry": "M29 4l-18 31h17l-5 25 30-37h-17l10-19z",
+                      "viewBox": [
+                        0,
+                        0,
+                        64,
+                        64
+                      ],
+                      "fill": "#7A2DDD",
                       "width": 46,
-                      "height": 46,
-                      "icon": "bolt",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "height": 46
                     },
                     {
                       "type": "frame",
@@ -246,7 +184,7 @@
                           "lineHeight": 1.05,
                           "fontFamily": "$font",
                           "fontSize": 16,
-                          "fontWeight": "800"
+                          "fontWeight": "700"
                         },
                         {
                           "type": "text",
@@ -257,7 +195,8 @@
                           "lineHeight": 1.1,
                           "fontFamily": "$font",
                           "fontSize": 14,
-                          "fontWeight": "500"
+                          "fontWeight": "300",
+                          "fontStyle": "italic"
                         }
                       ]
                     }
@@ -281,15 +220,20 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "icon",
-                      "id": "gRSgu",
-                      "name": "Benefit Icon 2",
+                      "type": "path",
+                      "id": "k02Di",
+                      "name": "Benefit SVG Vector — Shared Phone",
+                      "geometry": "M21 3h22q7 0 7 7v44q0 7-7 7h-22q-7 0-7-7v-44q0-7 7-7z m-2 8v39h26v-39z m10 44a3 3 0 1 0 6 0 3 3 0 1 0-6 0z",
+                      "fillRule": "evenodd",
+                      "viewBox": [
+                        0,
+                        0,
+                        64,
+                        64
+                      ],
+                      "fill": "#6D28D9",
                       "width": 46,
-                      "height": 46,
-                      "icon": "smartphone",
-                      "library": "lucide",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "height": 46
                     },
                     {
                       "type": "frame",
@@ -308,7 +252,7 @@
                           "lineHeight": 1.05,
                           "fontFamily": "$font",
                           "fontSize": 16,
-                          "fontWeight": "800"
+                          "fontWeight": "700"
                         },
                         {
                           "type": "text",
@@ -319,7 +263,8 @@
                           "lineHeight": 1.1,
                           "fontFamily": "$font",
                           "fontSize": 14,
-                          "fontWeight": "500"
+                          "fontWeight": "300",
+                          "fontStyle": "italic"
                         }
                       ]
                     }
@@ -343,15 +288,20 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "icon",
-                      "id": "cbCKz",
-                      "name": "Benefit Icon 3",
+                      "type": "path",
+                      "id": "toLJS",
+                      "name": "Benefit SVG Vector — No Signup",
+                      "geometry": "M32 3l23 10v16c0 15-9 25-23 32-14-7-23-17-23-32v-16l23-10z m0 7l-16 7v12c0 10 5.7 18 16 24 10.3-6 16-14 16-24v-12l-16-7z m-10 21l7 8 14-17-4-3-10 13-4-5z",
+                      "fillRule": "evenodd",
+                      "viewBox": [
+                        0,
+                        0,
+                        64,
+                        64
+                      ],
+                      "fill": "#6D28D9",
                       "width": 46,
-                      "height": 46,
-                      "icon": "verified_user",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "height": 46
                     },
                     {
                       "type": "frame",
@@ -370,7 +320,7 @@
                           "lineHeight": 1.05,
                           "fontFamily": "$font",
                           "fontSize": 16,
-                          "fontWeight": "800"
+                          "fontWeight": "700"
                         },
                         {
                           "type": "text",
@@ -381,7 +331,8 @@
                           "lineHeight": 1.1,
                           "fontFamily": "$font",
                           "fontSize": 14,
-                          "fontWeight": "500"
+                          "fontWeight": "300",
+                          "fontStyle": "italic"
                         }
                       ]
                     }
@@ -392,26 +343,13 @@
             {
               "type": "frame",
               "id": "m0JY4",
-              "x": 14,
-              "y": 512,
+              "x": 20,
+              "y": 491,
               "name": "Desktop How To Play",
               "width": 676,
-              "height": 245,
+              "height": 256,
               "layout": "none",
               "children": [
-                {
-                  "type": "text",
-                  "id": "JHcbm",
-                  "x": 0,
-                  "y": 0,
-                  "name": "How Eyebrow",
-                  "fill": "$brand-purple",
-                  "content": "HOW TO PLAY",
-                  "fontFamily": "$font",
-                  "fontSize": 15,
-                  "fontWeight": "900",
-                  "letterSpacing": 1.5
-                },
                 {
                   "type": "text",
                   "id": "ZNGsg",
@@ -422,7 +360,7 @@
                   "content": "A whole game in one hand.",
                   "fontFamily": "$font",
                   "fontSize": 44,
-                  "fontWeight": "900",
+                  "fontWeight": "700",
                   "letterSpacing": -1.5
                 },
                 {
@@ -445,15 +383,17 @@
                   "y": 124,
                   "name": "Desktop Steps",
                   "width": 675,
-                  "height": 121,
-                  "gap": 30,
+                  "height": 132,
+                  "layout": "none",
                   "children": [
                     {
                       "type": "frame",
                       "id": "R0Dsl",
+                      "x": 0,
+                      "y": 0,
                       "name": "Step Card 01",
-                      "width": "fill_container",
-                      "height": 121,
+                      "width": 205,
+                      "height": 132,
                       "fill": "#FFFFFFB8",
                       "cornerRadius": 12,
                       "stroke": "$line",
@@ -473,17 +413,21 @@
                           "fontWeight": "900"
                         },
                         {
-                          "type": "icon",
-                          "id": "f1j8Qd",
+                          "type": "path",
+                          "id": "y9cGgd",
                           "x": 110,
                           "y": 20,
-                          "name": "Step Icon 01",
+                          "name": "Step SVG Vector — Choose Group",
+                          "geometry": "M36 5a10 10 0 1 1 0 20 10 10 0 1 1 0-20z m-21 13a7 7 0 1 1 0 14 7 7 0 1 1 0-14z m42 0a7 7 0 1 1 0 14 7 7 0 1 1 0-14z m-37 39v-9c0-11 7-18 16-18 9 0 16 7 16 18v9h-32z m-18 0v-7c0-8 5-13 13-13 3 0 5 1 7 2-4 5-6 11-6 18h-14z m68 0v-7c0-8-5-13-13-13-3 0-5 1-7 2 4 5 6 11 6 18h14z",
+                          "viewBox": [
+                            0,
+                            0,
+                            72,
+                            64
+                          ],
+                          "fill": "#6D28D9",
                           "width": 52,
-                          "height": 52,
-                          "icon": "groups",
-                          "library": "Material Symbols Rounded",
-                          "weight": 700,
-                          "fill": "$brand-purple"
+                          "height": 52
                         },
                         {
                           "type": "text",
@@ -495,29 +439,33 @@
                           "content": "Choose your group",
                           "fontFamily": "$font",
                           "fontSize": 16,
-                          "fontWeight": "900"
+                          "fontWeight": "700",
+                          "letterSpacing": -0.3
                         },
                         {
                           "type": "text",
                           "id": "ZY7C8",
                           "x": 16,
-                          "y": 90,
+                          "y": 95,
                           "name": "Step Body 01",
                           "fill": "$muted",
                           "content": "Pick 3–12 players and\na word category.",
                           "lineHeight": 1.15,
                           "fontFamily": "$font",
                           "fontSize": 11,
-                          "fontWeight": "500"
+                          "fontWeight": "300",
+                          "fontStyle": "italic"
                         }
                       ]
                     },
                     {
                       "type": "frame",
                       "id": "Q85cr",
+                      "x": 235,
+                      "y": 0,
                       "name": "Step Card 02",
-                      "width": "fill_container",
-                      "height": 121,
+                      "width": 205,
+                      "height": 132,
                       "fill": "#FFFFFFB8",
                       "cornerRadius": 12,
                       "stroke": "$line",
@@ -537,17 +485,22 @@
                           "fontWeight": "900"
                         },
                         {
-                          "type": "icon",
-                          "id": "jhcTG",
+                          "type": "path",
+                          "id": "M7ShJF",
                           "x": 110,
                           "y": 20,
-                          "name": "Step Icon 02",
+                          "name": "Step SVG Vector — Pass and Peek",
+                          "geometry": "M19 2h26q7 0 7 7v46q0 7-7 7h-26q-7 0-7-7v-46q0-7 7-7z m1 28c4-7 8-10 12-10 4 0 8 3 12 10-4 7-8 10-12 10-4 0-8-3-12-10z m7 0a5 5 0 1 0 10 0 5 5 0 1 0-10 0z",
+                          "fillRule": "evenodd",
+                          "viewBox": [
+                            0,
+                            0,
+                            64,
+                            64
+                          ],
+                          "fill": "#6D28D9",
                           "width": 52,
-                          "height": 52,
-                          "icon": "visibility",
-                          "library": "Material Symbols Rounded",
-                          "weight": 700,
-                          "fill": "$brand-purple"
+                          "height": 52
                         },
                         {
                           "type": "text",
@@ -559,29 +512,33 @@
                           "content": "Pass and peek",
                           "fontFamily": "$font",
                           "fontSize": 16,
-                          "fontWeight": "900"
+                          "fontWeight": "700",
+                          "letterSpacing": -0.3
                         },
                         {
                           "type": "text",
                           "id": "EaQYk",
                           "x": 16,
-                          "y": 90,
+                          "y": 94,
                           "name": "Step Body 02",
                           "fill": "$muted",
                           "content": "Each player holds to\nreveal one private word.",
                           "lineHeight": 1.15,
                           "fontFamily": "$font",
                           "fontSize": 11,
-                          "fontWeight": "500"
+                          "fontWeight": "300",
+                          "fontStyle": "italic"
                         }
                       ]
                     },
                     {
                       "type": "frame",
                       "id": "CxEND",
+                      "x": 470,
+                      "y": 0,
                       "name": "Step Card 03",
-                      "width": "fill_container",
-                      "height": 121,
+                      "width": 205,
+                      "height": 132,
                       "fill": "#FFFFFFB8",
                       "cornerRadius": 12,
                       "stroke": "$line",
@@ -601,17 +558,96 @@
                           "fontWeight": "900"
                         },
                         {
-                          "type": "icon",
-                          "id": "yaNmh",
+                          "type": "frame",
+                          "id": "cg1yi",
                           "x": 110,
                           "y": 20,
-                          "name": "Step Icon 03",
+                          "name": "Step SVG Vector — Describe and Vote B",
                           "width": 52,
                           "height": 52,
-                          "icon": "forum",
-                          "library": "Material Symbols Rounded",
-                          "weight": 700,
-                          "fill": "$brand-purple"
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "path",
+                              "id": "y3lNC",
+                              "x": 0,
+                              "y": 3,
+                              "name": "Vote Bubble Outline",
+                              "geometry": "M13 12h36q7 0 7 7v24q0 7-7 7h-21l-12 10v-10h-3q-7 0-7-7v-24q0-7 7-7z",
+                              "viewBox": [
+                                0,
+                                0,
+                                72,
+                                64
+                              ],
+                              "fill": "#EFE5FF",
+                              "width": 52,
+                              "height": 46,
+                              "stroke": "#6721C9",
+                              "strokeWidth": 3.5,
+                              "strokeLinejoin": "round"
+                            },
+                            {
+                              "type": "path",
+                              "id": "UVqL0",
+                              "x": 0,
+                              "y": 3,
+                              "name": "Vote Message Lines",
+                              "geometry": "M17 28h23m-23 9h16",
+                              "viewBox": [
+                                0,
+                                0,
+                                72,
+                                64
+                              ],
+                              "fill": "#00000000",
+                              "width": 52,
+                              "height": 46,
+                              "stroke": "#8F52E5",
+                              "strokeWidth": 4.5,
+                              "strokeLinecap": "round"
+                            },
+                            {
+                              "type": "path",
+                              "id": "upV2Z",
+                              "x": 0,
+                              "y": 3,
+                              "name": "Vote Check Badge",
+                              "geometry": "M68 14a12 12 0 1 1-24 0 12 12 0 1 1 24 0z",
+                              "viewBox": [
+                                0,
+                                0,
+                                72,
+                                64
+                              ],
+                              "fill": "#712BD0",
+                              "width": 52,
+                              "height": 46,
+                              "stroke": "#2D0870",
+                              "strokeWidth": 2.5
+                            },
+                            {
+                              "type": "path",
+                              "id": "LMcDa",
+                              "x": 0,
+                              "y": 3,
+                              "name": "Vote Check Mark",
+                              "geometry": "M50 14l4 4 8-9",
+                              "viewBox": [
+                                0,
+                                0,
+                                72,
+                                64
+                              ],
+                              "fill": "#00000000",
+                              "width": 52,
+                              "height": 46,
+                              "stroke": "#FFFFFF",
+                              "strokeWidth": 4,
+                              "strokeLinejoin": "round",
+                              "strokeLinecap": "round"
+                            }
+                          ]
                         },
                         {
                           "type": "text",
@@ -623,22 +659,66 @@
                           "content": "Describe and vote",
                           "fontFamily": "$font",
                           "fontSize": 16,
-                          "fontWeight": "900"
+                          "fontWeight": "700",
+                          "letterSpacing": -0.3
                         },
                         {
                           "type": "text",
                           "id": "WIJSM",
                           "x": 16,
-                          "y": 90,
+                          "y": 94,
                           "name": "Step Body 03",
                           "fill": "$muted",
                           "content": "Give clues, spot the odd\nword, then reveal the imposter.",
                           "lineHeight": 1.15,
                           "fontFamily": "$font",
                           "fontSize": 11,
-                          "fontWeight": "500"
+                          "fontWeight": "300",
+                          "fontStyle": "italic"
                         }
                       ]
+                    },
+                    {
+                      "type": "path",
+                      "id": "t9OKlV",
+                      "x": 198,
+                      "y": 38,
+                      "name": "Step Connector SVG Vector 01",
+                      "geometry": "M24 2a22 22 0 1 1 0 44 22 22 0 1 1 0-44z m-9 22h17m-7-7l7 7-7 7",
+                      "viewBox": [
+                        0,
+                        0,
+                        48,
+                        48
+                      ],
+                      "fill": "#FFFFFF",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "#6D28D9",
+                      "strokeWidth": 2.5,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "path",
+                      "id": "piZvj",
+                      "x": 433,
+                      "y": 38,
+                      "name": "Step Connector SVG Vector 02",
+                      "geometry": "M24 2a22 22 0 1 1 0 44 22 22 0 1 1 0-44z m-9 22h17m-7-7l7 7-7 7",
+                      "viewBox": [
+                        0,
+                        0,
+                        48,
+                        48
+                      ],
+                      "fill": "#FFFFFF",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "#6D28D9",
+                      "strokeWidth": 2.5,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
                     }
                   ]
                 }
@@ -653,7 +733,7 @@
           "y": 105,
           "name": "Desktop Game Setup",
           "width": 574,
-          "height": 455,
+          "height": 469,
           "fill": "#FFFFFFF2",
           "cornerRadius": 16,
           "stroke": "$line",
@@ -679,9 +759,7 @@
               "fill": "$brand-purple",
               "content": "SET UP YOUR GAME",
               "fontFamily": "$font",
-              "fontSize": 15,
-              "fontWeight": "900",
-              "letterSpacing": 1
+              "fontSize": 13
             },
             {
               "type": "text",
@@ -691,9 +769,9 @@
               "name": "Setup Title",
               "fill": "$brand-navy",
               "content": "How many are playing?",
-              "fontFamily": "$font",
+              "fontFamily": "Helvetica Neue",
               "fontSize": 34,
-              "fontWeight": "900",
+              "fontWeight": "700",
               "letterSpacing": -1
             },
             {
@@ -1088,7 +1166,7 @@
                       "content": "Random words",
                       "fontFamily": "$font",
                       "fontSize": 17,
-                      "fontWeight": "800"
+                      "fontWeight": "700"
                     }
                   ]
                 },
@@ -1141,7 +1219,7 @@
               "content": "Category",
               "fontFamily": "$font",
               "fontSize": 16,
-              "fontWeight": "800"
+              "fontWeight": "700"
             },
             {
               "type": "frame",
@@ -1259,7 +1337,7 @@
                   "content": "PLAY",
                   "fontFamily": "$font",
                   "fontSize": 34,
-                  "fontWeight": "900",
+                  "fontWeight": "700",
                   "letterSpacing": 1
                 }
               ]
@@ -1295,34 +1373,34 @@
         },
         {
           "type": "frame",
-          "id": "pavE0",
+          "id": "e2Chd",
           "x": 840,
-          "y": 579,
-          "name": "Desktop Privacy Card",
+          "y": 589,
+          "name": "Desktop Privacy Card — SVG Vector",
           "width": 574,
           "height": 275,
           "fill": "#FFFFFFE8",
           "cornerRadius": 16,
-          "stroke": "$line",
+          "stroke": "#B9A5ED",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
             {
               "type": "text",
-              "id": "s9JT2",
+              "id": "XmXeL",
               "x": 30,
               "y": 18,
               "name": "Privacy Title",
-              "fill": "$brand-navy",
+              "fill": "#160B4F",
               "content": "Secrets stay secret.",
-              "fontFamily": "$font",
+              "fontFamily": "Helvetica Neue",
               "fontSize": 34,
-              "fontWeight": "900",
+              "fontWeight": "700",
               "letterSpacing": -1
             },
             {
               "type": "text",
-              "id": "zpThC",
+              "id": "vprix",
               "x": 30,
               "y": 65,
               "name": "Privacy Intro",
@@ -1331,156 +1409,723 @@
               "width": 305,
               "content": "The word disappears when you let go,\nswitch apps, lock the phone, or lose focus.",
               "lineHeight": 1.25,
-              "fontFamily": "$font",
-              "fontSize": 14,
-              "fontWeight": "500"
+              "fontFamily": "Helvetica Neue",
+              "fontSize": 11,
+              "fontWeight": "300",
+              "fontStyle": "italic"
             },
             {
               "type": "ellipse",
-              "id": "kbapG",
+              "id": "SMuH2",
               "x": 31,
               "y": 126,
               "name": "Privacy Check Circle 1",
-              "fill": "$brand-purple",
+              "fill": "#6D28D9",
               "width": 21,
               "height": 21
             },
             {
-              "type": "icon",
-              "id": "JCQrJ",
+              "type": "path",
+              "id": "SeF0i",
               "x": 35,
               "y": 130,
               "name": "Privacy Check 1",
+              "geometry": "M2 6l3 3 5-6",
+              "viewBox": [
+                0,
+                0,
+                12,
+                12
+              ],
+              "fill": "#00000000",
               "width": 13,
               "height": 13,
-              "icon": "check",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "#FFFFFF"
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
             },
             {
               "type": "text",
-              "id": "tEtmN",
+              "id": "KJqKC",
               "x": 63,
               "y": 125,
               "name": "Privacy Point 1",
               "fill": "#3A3451",
               "content": "Every player sees the same\nscreen and feedback.",
               "lineHeight": 1.15,
-              "fontFamily": "$font",
-              "fontSize": 14,
-              "fontWeight": "600"
+              "fontFamily": "Helvetica Neue",
+              "fontSize": 14
             },
             {
               "type": "ellipse",
-              "id": "WKEyZ",
+              "id": "GYfCD",
               "x": 31,
               "y": 173,
               "name": "Privacy Check Circle 2",
-              "fill": "$brand-purple",
+              "fill": "#6D28D9",
               "width": 21,
               "height": 21
             },
             {
-              "type": "icon",
-              "id": "q4gyT",
+              "type": "path",
+              "id": "r65mz3",
               "x": 35,
               "y": 177,
               "name": "Privacy Check 2",
+              "geometry": "M2 6l3 3 5-6",
+              "viewBox": [
+                0,
+                0,
+                12,
+                12
+              ],
+              "fill": "#00000000",
               "width": 13,
               "height": 13,
-              "icon": "check",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "#FFFFFF"
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
             },
             {
               "type": "text",
-              "id": "ga3Dx",
+              "id": "nOgRV",
               "x": 63,
               "y": 172,
               "name": "Privacy Point 2",
               "fill": "#3A3451",
               "content": "Finished players cannot\ngo back to their word.",
               "lineHeight": 1.15,
-              "fontFamily": "$font",
-              "fontSize": 14,
-              "fontWeight": "600"
+              "fontFamily": "Helvetica Neue",
+              "fontSize": 14
             },
             {
               "type": "ellipse",
-              "id": "TZzrH",
+              "id": "xUYd2",
               "x": 31,
               "y": 220,
               "name": "Privacy Check Circle 3",
-              "fill": "$brand-purple",
+              "fill": "#6D28D9",
               "width": 21,
               "height": 21
             },
             {
-              "type": "icon",
-              "id": "SzC0l",
+              "type": "path",
+              "id": "KJs25",
               "x": 35,
               "y": 224,
               "name": "Privacy Check 3",
+              "geometry": "M2 6l3 3 5-6",
+              "viewBox": [
+                0,
+                0,
+                12,
+                12
+              ],
+              "fill": "#00000000",
               "width": 13,
               "height": 13,
-              "icon": "check",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "#FFFFFF"
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
             },
             {
               "type": "text",
-              "id": "SZn1o",
+              "id": "Y5Vbd",
               "x": 63,
               "y": 219,
               "name": "Privacy Point 3",
               "fill": "#3A3451",
               "content": "Refresh returns to a\nsafe handoff screen.",
               "lineHeight": 1.15,
-              "fontFamily": "$font",
-              "fontSize": 14,
-              "fontWeight": "600"
+              "fontFamily": "Helvetica Neue",
+              "fontSize": 14
             },
             {
-              "type": "rectangle",
-              "id": "Rd9Nc",
-              "x": 331,
-              "y": 16,
-              "name": "Privacy Phone Illustration",
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "public/privacy-phone-card-hd.png",
-                "mode": "fit"
-              },
-              "width": 229,
-              "height": 245
-            },
-            {
-              "type": "icon",
-              "id": "MDpMl",
-              "x": 537,
-              "y": 3,
-              "name": "Privacy Sparkle",
-              "width": 35,
-              "height": 35,
-              "icon": "sparkles",
-              "library": "lucide",
-              "weight": 700,
-              "fill": "$brand-yellow"
+              "type": "frame",
+              "id": "n33y9",
+              "x": 348,
+              "y": 34,
+              "name": "Desktop Proportional Phone Pass Illustration",
+              "width": 258,
+              "height": 240,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v8vFH",
+                  "x": 131.7499473,
+                  "y": 20.999991599999998,
+                  "name": "Desktop Pass Card Group",
+                  "rotation": -10,
+                  "width": 125.833283,
+                  "height": 179.999928,
+                  "fill": "#00000000",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 14.166661,
+                      "id": "r5osOR",
+                      "x": 4.166665,
+                      "y": 4.999998,
+                      "name": "Desktop Card Thickness",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 145,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#54209A",
+                            "position": 0
+                          },
+                          {
+                            "color": "#260852",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 121.666618,
+                      "height": 174.99993
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 14.166661,
+                      "id": "q7l3mz",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Desktop Pass Card",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 145,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#A95BFF",
+                            "position": 0
+                          },
+                          {
+                            "color": "#762DE0",
+                            "position": 0.48
+                          },
+                          {
+                            "color": "#4A168D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 121.666618,
+                      "height": 174.99993,
+                      "stroke": "#2A075F",
+                      "strokeWidth": 2.499999,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#24104C4D",
+                        "offset": {
+                          "x": 0,
+                          "y": 5.833331
+                        },
+                        "blur": 4.999998
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "id": "o33D5",
+                      "x": 10.833328999999999,
+                      "y": 10.833328999999999,
+                      "name": "Desktop Card Highlight",
+                      "geometry": "M0 0h119v17c-29-11-68-10-119 3z",
+                      "viewBox": [
+                        0,
+                        0,
+                        119,
+                        20
+                      ],
+                      "fill": "#D7A8FF38",
+                      "width": 99.166627,
+                      "height": 16.66666
+                    },
+                    {
+                      "type": "path",
+                      "id": "Hz2Da",
+                      "x": 10.833328999999999,
+                      "y": 12.499995,
+                      "name": "Desktop Card Edge Shine",
+                      "geometry": "M0.5 0v180",
+                      "viewBox": [
+                        0,
+                        0,
+                        1,
+                        180
+                      ],
+                      "fill": "#00000000",
+                      "width": 1,
+                      "height": 149.99994,
+                      "stroke": "#CFA1FF52",
+                      "strokeWidth": 1.666666
+                    },
+                    {
+                      "type": "text",
+                      "id": "u2P8W",
+                      "x": 18.333326,
+                      "y": 39.999984,
+                      "name": "Desktop Pass Label",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 103.333292,
+                      "content": "PASS",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 29.999988,
+                      "fontWeight": "800",
+                      "letterSpacing": -0.833333
+                    },
+                    {
+                      "type": "text",
+                      "id": "RxiBh",
+                      "x": 20.833325,
+                      "y": 72.499971,
+                      "name": "Desktop Clockwise Label",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 109.999956,
+                      "content": "CLOCKWISE",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 12.9166615,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.1666666
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "q5HA3",
+                      "x": 40.833317,
+                      "y": 97.499961,
+                      "name": "Desktop Clockwise Ring",
+                      "innerRadius": 0.72,
+                      "startAngle": 20,
+                      "sweepAngle": 290,
+                      "fill": "#EFE3FF",
+                      "width": 51.666646,
+                      "height": 51.666646
+                    },
+                    {
+                      "type": "path",
+                      "id": "twTQq",
+                      "x": 91.44072596600722,
+                      "y": 131.6373901977105,
+                      "name": "Desktop Clockwise Arrowhead",
+                      "rotation": -83.89311654354637,
+                      "geometry": "M0 22l5-22 18 13z",
+                      "viewBox": [
+                        0,
+                        0,
+                        23,
+                        22
+                      ],
+                      "fill": "#EFE3FF",
+                      "width": 19.166659,
+                      "height": 18.333326
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UKTFu",
+                  "x": -3,
+                  "y": -2,
+                  "name": "Desktop Phone Group",
+                  "width": 147.499941,
+                  "height": 222.499911,
+                  "fill": "#00000000",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3.333332,
+                      "id": "J4Fzaq",
+                      "x": 23.333324,
+                      "y": 59.999976,
+                      "name": "Desktop Left Button One",
+                      "fill": "#2B0D5D",
+                      "width": 6.666664,
+                      "height": 32.499987
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3.333332,
+                      "id": "pvtmf",
+                      "x": 23.333324,
+                      "y": 99.166627,
+                      "name": "Desktop Left Button Two",
+                      "fill": "#2B0D5D",
+                      "width": 6.666664,
+                      "height": 23.333324
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2.9166655,
+                      "id": "KpeTL",
+                      "x": 141.66661,
+                      "y": 68.333306,
+                      "name": "Desktop Right Button",
+                      "fill": "#17052F",
+                      "width": 5.833331,
+                      "height": 45.833315
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 25.833323,
+                      "id": "ei39J",
+                      "x": 28.333322,
+                      "y": 7.499997,
+                      "name": "Desktop Phone Outer",
+                      "fill": "#1A063A",
+                      "width": 118.333286,
+                      "height": 214.999914,
+                      "stroke": "#4E2581",
+                      "strokeWidth": 3.333332,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#1C063F6B",
+                        "offset": {
+                          "x": 0,
+                          "y": 6.666664
+                        },
+                        "blur": 5.833331
+                      }
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 22.499991,
+                      "id": "dF7M0",
+                      "x": 32.499987,
+                      "y": 10.833328999999999,
+                      "name": "Desktop Phone Body",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 150,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#3A176E",
+                            "position": 0
+                          },
+                          {
+                            "color": "#251052",
+                            "position": 0.18
+                          },
+                          {
+                            "color": "#100422",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 109.999956,
+                      "height": 206.666584,
+                      "stroke": "#190534",
+                      "strokeWidth": 2.499999
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 19.166659,
+                      "id": "M4q4hy",
+                      "x": 37.499985,
+                      "y": 15.833327,
+                      "name": "Desktop Inner Highlight",
+                      "fill": "#00000000",
+                      "width": 99.99996,
+                      "height": 196.666588,
+                      "stroke": "#7545A761",
+                      "strokeWidth": 1.666666
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 13.333328,
+                      "id": "YyjsT",
+                      "x": 43.333315999999996,
+                      "y": 35.833319,
+                      "name": "Desktop Phone Screen",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 150,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#35136A",
+                            "position": 0
+                          },
+                          {
+                            "color": "#260D52",
+                            "position": 0.56
+                          },
+                          {
+                            "color": "#180632",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 88.333298,
+                      "height": 156.666604
+                    },
+                    {
+                      "type": "path",
+                      "id": "fhyMA",
+                      "x": 48.333314,
+                      "y": 40.833317,
+                      "name": "Desktop Screen Gloss",
+                      "geometry": "M0 0h92v56c-21-18-52-24-92-12z",
+                      "viewBox": [
+                        0,
+                        0,
+                        92,
+                        56
+                      ],
+                      "fill": "#8D58C814",
+                      "width": 76.666636,
+                      "height": 46.666648
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2.9166655,
+                      "id": "rHvIT",
+                      "x": 71.666638,
+                      "y": 20.833325,
+                      "name": "Desktop Speaker",
+                      "fill": "#67438B",
+                      "width": 31.666654,
+                      "height": 5.833331
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2.0833325,
+                      "id": "XeFDq",
+                      "x": 70.833305,
+                      "y": 204.166585,
+                      "name": "Desktop Home Bar",
+                      "fill": "#69458D",
+                      "width": 33.33332,
+                      "height": 4.166665
+                    },
+                    {
+                      "type": "path",
+                      "id": "qaObw",
+                      "x": 81.666634,
+                      "y": 45.833315,
+                      "name": "Desktop Lock Shackle",
+                      "geometry": "M0 21v-10a11 11 0 0 1 22 0v10",
+                      "viewBox": [
+                        0,
+                        0,
+                        22,
+                        21
+                      ],
+                      "fill": "#00000000",
+                      "width": 18.333326,
+                      "height": 17.499993,
+                      "stroke": "#FFFFFF",
+                      "strokeWidth": 4.166665,
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 4.999998,
+                      "id": "IF6MB",
+                      "x": 78.333302,
+                      "y": 61.666641999999996,
+                      "name": "Desktop Lock Body",
+                      "fill": "#F7F3FF",
+                      "width": 24.99999,
+                      "height": 22.499991
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "OJ2mb",
+                      "x": 88.08329810000001,
+                      "y": 67.2499731,
+                      "name": "Desktop Lock Keyhole",
+                      "fill": "#25104E",
+                      "width": 5.4999978,
+                      "height": 5.4999978
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1.2499995,
+                      "id": "pzwjJ",
+                      "x": 89.5832975,
+                      "y": 71.666638,
+                      "name": "Desktop Lock Stem",
+                      "fill": "#25104E",
+                      "width": 2.499999,
+                      "height": 6.666664
+                    },
+                    {
+                      "type": "text",
+                      "id": "j8SCD",
+                      "x": 46.666648,
+                      "y": 89.999964,
+                      "name": "Desktop Press Label",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 81.666634,
+                      "content": "Press and hold",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 10.833328999999999,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 7.499997,
+                      "id": "v52fuN",
+                      "x": 54.166645,
+                      "y": 110.833289,
+                      "name": "Desktop Secret Panel",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 145,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#7040B0",
+                            "position": 0
+                          },
+                          {
+                            "color": "#4A237E",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 66.66664,
+                      "height": 44.166649,
+                      "stroke": "#7545AE",
+                      "strokeWidth": 1.2499995
+                    },
+                    {
+                      "type": "path",
+                      "id": "OBMHV",
+                      "x": 59.999976,
+                      "y": 115.833287,
+                      "name": "Desktop Panel Highlight",
+                      "geometry": "M0 0.5h66",
+                      "viewBox": [
+                        0,
+                        0,
+                        66,
+                        1
+                      ],
+                      "fill": "#00000000",
+                      "width": 54.999978,
+                      "height": 1,
+                      "stroke": "#A87CDC59",
+                      "strokeWidth": 0.833333
+                    },
+                    {
+                      "type": "text",
+                      "id": "c1dZd",
+                      "x": 54.166645,
+                      "y": 120.833285,
+                      "name": "Desktop Secret Line One",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 66.66664,
+                      "content": "Your word",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 9.166663,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hFDX9",
+                      "x": 54.166645,
+                      "y": 134.166613,
+                      "name": "Desktop Secret Line Two",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 66.66664,
+                      "content": "appears here",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 9.166663,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "path",
+                      "id": "ncTgr",
+                      "x": 64.166641,
+                      "y": 158.33327,
+                      "name": "Desktop Eye",
+                      "geometry": "M0 18c9-12 18-18 28-18s19 6 28 18c-9 12-18 18-28 18s-19-6-28-18z",
+                      "viewBox": [
+                        0,
+                        0,
+                        56,
+                        36
+                      ],
+                      "fill": "#F8F4FF",
+                      "width": 46.666648,
+                      "height": 29.999988
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "kkeqA",
+                      "x": 79.999968,
+                      "y": 165.833267,
+                      "name": "Desktop Eye Iris",
+                      "fill": "#6130A0",
+                      "width": 14.999994,
+                      "height": 14.999994
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "tkhoh",
+                      "x": 84.5832995,
+                      "y": 170.4165985,
+                      "name": "Desktop Eye Pupil",
+                      "fill": "#16052F",
+                      "width": 5.833331,
+                      "height": 5.833331
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
           "type": "frame",
           "id": "Imw9E",
-          "x": 85,
-          "y": 869,
+          "x": 98,
+          "y": 890,
           "name": "Desktop FAQ",
-          "width": 1329,
-          "height": 82,
+          "width": 1316,
+          "height": 102,
           "fill": "#FFFFFFAA",
           "cornerRadius": 14,
           "stroke": "$line",
@@ -1490,22 +2135,22 @@
             {
               "type": "text",
               "id": "RjUh5",
-              "x": 497,
+              "x": 572,
               "y": 0,
               "name": "FAQ Title",
               "fill": "$brand-navy",
               "content": "Good to know.",
               "fontFamily": "$font",
               "fontSize": 28,
-              "fontWeight": "900"
+              "fontWeight": "700"
             },
             {
               "type": "frame",
               "id": "ryNUv",
-              "x": 15,
-              "y": 36,
+              "x": 16,
+              "y": 34,
               "name": "FAQ Item 1",
-              "width": 425,
+              "width": 418,
               "height": 40,
               "fill": "#FFFFFF",
               "cornerRadius": 8,
@@ -1544,10 +2189,10 @@
             {
               "type": "frame",
               "id": "nJb2J",
-              "x": 456,
-              "y": 36,
+              "x": 449.23947972456006,
+              "y": 34,
               "name": "FAQ Item 2",
-              "width": 425,
+              "width": 418,
               "height": 40,
               "fill": "#FFFFFF",
               "cornerRadius": 8,
@@ -1586,10 +2231,10 @@
             {
               "type": "frame",
               "id": "X29XI",
-              "x": 897,
-              "y": 36,
+              "x": 882.4789594491201,
+              "y": 34,
               "name": "FAQ Item 3",
-              "width": 425,
+              "width": 418,
               "height": 40,
               "fill": "#FFFFFF",
               "cornerRadius": 8,
@@ -1631,7 +2276,7 @@
           "type": "frame",
           "id": "Vs8pY",
           "x": 0,
-          "y": 959,
+          "y": 1045,
           "name": "Desktop Footer",
           "width": 1536,
           "height": 65,
@@ -1645,7 +2290,7 @@
             {
               "type": "rectangle",
               "id": "T8eEtn",
-              "x": 96,
+              "x": 77,
               "y": 5,
               "name": "Footer Logo",
               "fill": {
@@ -1660,8 +2305,8 @@
             {
               "type": "text",
               "id": "fU8c3",
-              "x": 229,
-              "y": 28,
+              "x": 231,
+              "y": 24,
               "name": "Footer Tagline",
               "fill": "$muted",
               "content": "Free to play. Built for the room you are already in.",
@@ -1693,7 +2338,7 @@
       "name": "Quick Imposter — Mobile 794×1984",
       "clip": true,
       "width": 794,
-      "height": 1984,
+      "height": 2174,
       "fill": "$page-bg",
       "layout": "none",
       "children": [
@@ -1873,8 +2518,8 @@
             {
               "type": "rectangle",
               "id": "Pu6H9",
-              "x": 145,
-              "y": 0,
+              "x": 200,
+              "y": -13,
               "name": "Generated Hero Background — Mobile",
               "fill": {
                 "type": "image",
@@ -1882,14 +2527,14 @@
                 "url": "public/generated/hero-background-illustration.png",
                 "mode": "stretch"
               },
-              "width": 410,
-              "height": 205
+              "width": 521,
+              "height": 210
             },
             {
               "type": "rectangle",
               "id": "w54Q6O",
-              "x": 47.5,
-              "y": 0,
+              "x": -17,
+              "y": 8,
               "name": "Generated Hero Headline — Mobile",
               "fill": {
                 "type": "image",
@@ -1905,11 +2550,11 @@
         {
           "type": "frame",
           "id": "Z3CFM",
-          "x": 43,
-          "y": 400,
+          "x": 44,
+          "y": 429,
           "name": "Mobile Game Setup",
           "width": 706,
-          "height": 487,
+          "height": 505,
           "fill": "#FFFFFFF2",
           "cornerRadius": 16,
           "stroke": "$line",
@@ -1935,9 +2580,7 @@
               "fill": "$brand-purple",
               "content": "SET UP YOUR GAME",
               "fontFamily": "$font",
-              "fontSize": 15,
-              "fontWeight": "900",
-              "letterSpacing": 1
+              "fontSize": 15
             },
             {
               "type": "text",
@@ -1949,7 +2592,7 @@
               "content": "How many are playing?",
               "fontFamily": "$font",
               "fontSize": 31,
-              "fontWeight": "900",
+              "fontWeight": "700",
               "letterSpacing": -1
             },
             {
@@ -2344,7 +2987,7 @@
                       "content": "Random words",
                       "fontFamily": "$font",
                       "fontSize": 18,
-                      "fontWeight": "800"
+                      "fontWeight": "700"
                     }
                   ]
                 },
@@ -2397,7 +3040,7 @@
               "content": "Category",
               "fontFamily": "$font",
               "fontSize": 17,
-              "fontWeight": "800"
+              "fontWeight": "700"
             },
             {
               "type": "frame",
@@ -2515,7 +3158,7 @@
                   "content": "PLAY",
                   "fontFamily": "$font",
                   "fontSize": 34,
-                  "fontWeight": "900",
+                  "fontWeight": "700",
                   "letterSpacing": 1
                 }
               ]
@@ -2576,7 +3219,7 @@
           "type": "frame",
           "id": "LqrSM",
           "x": 41,
-          "y": 905,
+          "y": 976,
           "name": "Mobile Benefits",
           "width": 711,
           "height": 189,
@@ -2605,14 +3248,19 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "icon",
-                  "id": "SMRfm",
-                  "name": "Mobile Benefit Icon 1",
+                  "type": "path",
+                  "id": "xiT4v",
+                  "name": "Mobile Benefit SVG Vector — Fast Start",
+                  "geometry": "M29 4l-18 31h17l-5 25 30-37h-17l10-19z",
+                  "viewBox": [
+                    0,
+                    0,
+                    64,
+                    64
+                  ],
+                  "fill": "#7A2DDD",
                   "width": 50,
-                  "height": 50,
-                  "icon": "bolt",
-                  "library": "lucide",
-                  "fill": "$brand-purple"
+                  "height": 50
                 },
                 {
                   "type": "text",
@@ -2624,7 +3272,7 @@
                   "textAlign": "center",
                   "fontFamily": "$font",
                   "fontSize": 18,
-                  "fontWeight": "900"
+                  "fontWeight": "700"
                 },
                 {
                   "type": "text",
@@ -2636,7 +3284,7 @@
                   "textAlign": "center",
                   "fontFamily": "$font",
                   "fontSize": 14,
-                  "fontWeight": "500"
+                  "fontStyle": "italic"
                 }
               ]
             },
@@ -2660,14 +3308,20 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "icon",
-                  "id": "oEihQ",
-                  "name": "Mobile Benefit Icon 2",
+                  "type": "path",
+                  "id": "L6w3EX",
+                  "name": "Mobile Benefit SVG Vector — Shared Phone",
+                  "geometry": "M21 3h22q7 0 7 7v44q0 7-7 7h-22q-7 0-7-7v-44q0-7 7-7z m-2 8v39h26v-39z m10 44a3 3 0 1 0 6 0 3 3 0 1 0-6 0z",
+                  "fillRule": "evenodd",
+                  "viewBox": [
+                    0,
+                    0,
+                    64,
+                    64
+                  ],
+                  "fill": "#6D28D9",
                   "width": 50,
-                  "height": 50,
-                  "icon": "smartphone",
-                  "library": "lucide",
-                  "fill": "$brand-purple"
+                  "height": 50
                 },
                 {
                   "type": "text",
@@ -2679,7 +3333,7 @@
                   "textAlign": "center",
                   "fontFamily": "$font",
                   "fontSize": 18,
-                  "fontWeight": "900"
+                  "fontWeight": "700"
                 },
                 {
                   "type": "text",
@@ -2691,7 +3345,7 @@
                   "textAlign": "center",
                   "fontFamily": "$font",
                   "fontSize": 14,
-                  "fontWeight": "500"
+                  "fontStyle": "italic"
                 }
               ]
             },
@@ -2711,14 +3365,20 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "icon",
-                  "id": "Z1zCX",
-                  "name": "Mobile Benefit Icon 3",
+                  "type": "path",
+                  "id": "bTFnU",
+                  "name": "Mobile Benefit SVG Vector — No Signup",
+                  "geometry": "M32 3l23 10v16c0 15-9 25-23 32-14-7-23-17-23-32v-16l23-10z m0 7l-16 7v12c0 10 5.7 18 16 24 10.3-6 16-14 16-24v-12l-16-7z m-10 21l7 8 14-17-4-3-10 13-4-5z",
+                  "fillRule": "evenodd",
+                  "viewBox": [
+                    0,
+                    0,
+                    64,
+                    64
+                  ],
+                  "fill": "#6D28D9",
                   "width": 50,
-                  "height": 50,
-                  "icon": "shield-check",
-                  "library": "lucide",
-                  "fill": "$brand-purple"
+                  "height": 50
                 },
                 {
                   "type": "text",
@@ -2730,7 +3390,7 @@
                   "textAlign": "center",
                   "fontFamily": "$font",
                   "fontSize": 18,
-                  "fontWeight": "900"
+                  "fontWeight": "700"
                 },
                 {
                   "type": "text",
@@ -2742,7 +3402,7 @@
                   "textAlign": "center",
                   "fontFamily": "$font",
                   "fontSize": 14,
-                  "fontWeight": "500"
+                  "fontStyle": "italic"
                 }
               ]
             }
@@ -2752,25 +3412,12 @@
           "type": "frame",
           "id": "lzOo7",
           "x": 47,
-          "y": 1115,
+          "y": 1186,
           "name": "Mobile How To Play",
           "width": 700,
           "height": 378,
           "layout": "none",
           "children": [
-            {
-              "type": "text",
-              "id": "PXeuX",
-              "x": 0,
-              "y": 0,
-              "name": "Mobile How Eyebrow",
-              "fill": "$brand-purple",
-              "content": "HOW TO PLAY",
-              "fontFamily": "$font",
-              "fontSize": 15,
-              "fontWeight": "900",
-              "letterSpacing": 1.5
-            },
             {
               "type": "text",
               "id": "aGOQM",
@@ -2781,7 +3428,7 @@
               "content": "A whole game in one hand.",
               "fontFamily": "$font",
               "fontSize": 31,
-              "fontWeight": "900",
+              "fontWeight": "700",
               "letterSpacing": -1
             },
             {
@@ -2833,17 +3480,21 @@
                       "fontWeight": "900"
                     },
                     {
-                      "type": "icon",
-                      "id": "Sxsj2",
+                      "type": "path",
+                      "id": "f5CO5",
                       "x": 155,
                       "y": 16,
-                      "name": "Mobile Step Icon 01",
+                      "name": "Mobile Step SVG Vector — Choose Group",
+                      "geometry": "M36 5a10 10 0 1 1 0 20 10 10 0 1 1 0-20z m-21 13a7 7 0 1 1 0 14 7 7 0 1 1 0-14z m42 0a7 7 0 1 1 0 14 7 7 0 1 1 0-14z m-37 39v-9c0-11 7-18 16-18 9 0 16 7 16 18v9h-32z m-18 0v-7c0-8 5-13 13-13 3 0 5 1 7 2-4 5-6 11-6 18h-14z m68 0v-7c0-8-5-13-13-13-3 0-5 1-7 2 4 5 6 11 6 18h14z",
+                      "viewBox": [
+                        0,
+                        0,
+                        72,
+                        64
+                      ],
+                      "fill": "#6D28D9",
                       "width": 48,
-                      "height": 48,
-                      "icon": "groups",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "height": 48
                     },
                     {
                       "type": "text",
@@ -2855,7 +3506,7 @@
                       "content": "Choose your group",
                       "fontFamily": "$font",
                       "fontSize": 18,
-                      "fontWeight": "900"
+                      "fontWeight": "700"
                     },
                     {
                       "type": "text",
@@ -2871,17 +3522,25 @@
                       "fontWeight": "500"
                     },
                     {
-                      "type": "icon",
-                      "id": "RARLj",
+                      "type": "path",
+                      "id": "dc38w",
                       "x": 637,
                       "y": 28,
-                      "name": "Mobile Step Chevron 01",
+                      "name": "Mobile Step Arrow SVG Vector 01",
+                      "geometry": "M24 2a22 22 0 1 1 0 44 22 22 0 1 1 0-44z m-9 22h17m-7-7l7 7-7 7",
+                      "viewBox": [
+                        0,
+                        0,
+                        48,
+                        48
+                      ],
+                      "fill": "#FFFFFF",
                       "width": 30,
                       "height": 30,
-                      "icon": "chevron_right",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "stroke": "#6D28D9",
+                      "strokeWidth": 2.5,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
                     }
                   ]
                 },
@@ -2910,17 +3569,22 @@
                       "fontWeight": "900"
                     },
                     {
-                      "type": "icon",
-                      "id": "f0jRG",
+                      "type": "path",
+                      "id": "i2HeRn",
                       "x": 155,
                       "y": 16,
-                      "name": "Mobile Step Icon 02",
+                      "name": "Mobile Step SVG Vector — Pass and Peek",
+                      "geometry": "M19 2h26q7 0 7 7v46q0 7-7 7h-26q-7 0-7-7v-46q0-7 7-7z m1 28c4-7 8-10 12-10 4 0 8 3 12 10-4 7-8 10-12 10-4 0-8-3-12-10z m7 0a5 5 0 1 0 10 0 5 5 0 1 0-10 0z",
+                      "fillRule": "evenodd",
+                      "viewBox": [
+                        0,
+                        0,
+                        64,
+                        64
+                      ],
+                      "fill": "#6D28D9",
                       "width": 48,
-                      "height": 48,
-                      "icon": "visibility",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "height": 48
                     },
                     {
                       "type": "text",
@@ -2932,7 +3596,7 @@
                       "content": "Pass and peek",
                       "fontFamily": "$font",
                       "fontSize": 18,
-                      "fontWeight": "900"
+                      "fontWeight": "700"
                     },
                     {
                       "type": "text",
@@ -2948,17 +3612,25 @@
                       "fontWeight": "500"
                     },
                     {
-                      "type": "icon",
-                      "id": "xJV9R",
+                      "type": "path",
+                      "id": "ZhcGb",
                       "x": 637,
                       "y": 28,
-                      "name": "Mobile Step Chevron 02",
+                      "name": "Mobile Step Arrow SVG Vector 02",
+                      "geometry": "M24 2a22 22 0 1 1 0 44 22 22 0 1 1 0-44z m-9 22h17m-7-7l7 7-7 7",
+                      "viewBox": [
+                        0,
+                        0,
+                        48,
+                        48
+                      ],
+                      "fill": "#FFFFFF",
                       "width": 30,
                       "height": 30,
-                      "icon": "chevron_right",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "stroke": "#6D28D9",
+                      "strokeWidth": 2.5,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
                     }
                   ]
                 },
@@ -2987,17 +3659,96 @@
                       "fontWeight": "900"
                     },
                     {
-                      "type": "icon",
-                      "id": "OzrzR",
+                      "type": "frame",
+                      "id": "muDoA",
                       "x": 155,
                       "y": 16,
-                      "name": "Mobile Step Icon 03",
+                      "name": "Mobile Step SVG Vector — Describe and Vote B",
                       "width": 48,
                       "height": 48,
-                      "icon": "forum",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "TGFDO",
+                          "x": 0,
+                          "y": 2.5,
+                          "name": "Mobile Vote Bubble Outline",
+                          "geometry": "M13 12h36q7 0 7 7v24q0 7-7 7h-21l-12 10v-10h-3q-7 0-7-7v-24q0-7 7-7z",
+                          "viewBox": [
+                            0,
+                            0,
+                            72,
+                            64
+                          ],
+                          "fill": "#EFE5FF",
+                          "width": 48,
+                          "height": 43,
+                          "stroke": "#6721C9",
+                          "strokeWidth": 3.5,
+                          "strokeLinejoin": "round"
+                        },
+                        {
+                          "type": "path",
+                          "id": "p3TxM3",
+                          "x": 0,
+                          "y": 2.5,
+                          "name": "Mobile Vote Message Lines",
+                          "geometry": "M17 28h23m-23 9h16",
+                          "viewBox": [
+                            0,
+                            0,
+                            72,
+                            64
+                          ],
+                          "fill": "#00000000",
+                          "width": 48,
+                          "height": 43,
+                          "stroke": "#8F52E5",
+                          "strokeWidth": 4.5,
+                          "strokeLinecap": "round"
+                        },
+                        {
+                          "type": "path",
+                          "id": "B9unFn",
+                          "x": 0,
+                          "y": 2.5,
+                          "name": "Mobile Vote Check Badge",
+                          "geometry": "M68 14a12 12 0 1 1-24 0 12 12 0 1 1 24 0z",
+                          "viewBox": [
+                            0,
+                            0,
+                            72,
+                            64
+                          ],
+                          "fill": "#712BD0",
+                          "width": 48,
+                          "height": 43,
+                          "stroke": "#2D0870",
+                          "strokeWidth": 2.5
+                        },
+                        {
+                          "type": "path",
+                          "id": "lUtPU",
+                          "x": 0,
+                          "y": 2.5,
+                          "name": "Mobile Vote Check Mark",
+                          "geometry": "M50 14l4 4 8-9",
+                          "viewBox": [
+                            0,
+                            0,
+                            72,
+                            64
+                          ],
+                          "fill": "#00000000",
+                          "width": 48,
+                          "height": 43,
+                          "stroke": "#FFFFFF",
+                          "strokeWidth": 4,
+                          "strokeLinejoin": "round",
+                          "strokeLinecap": "round"
+                        }
+                      ]
                     },
                     {
                       "type": "text",
@@ -3009,7 +3760,7 @@
                       "content": "Describe and vote",
                       "fontFamily": "$font",
                       "fontSize": 18,
-                      "fontWeight": "900"
+                      "fontWeight": "700"
                     },
                     {
                       "type": "text",
@@ -3025,17 +3776,25 @@
                       "fontWeight": "500"
                     },
                     {
-                      "type": "icon",
-                      "id": "efEPC",
+                      "type": "path",
+                      "id": "Y7eyAD",
                       "x": 637,
                       "y": 28,
-                      "name": "Mobile Step Chevron 03",
+                      "name": "Mobile Step Arrow SVG Vector 03",
+                      "geometry": "M24 2a22 22 0 1 1 0 44 22 22 0 1 1 0-44z m-9 22h17m-7-7l7 7-7 7",
+                      "viewBox": [
+                        0,
+                        0,
+                        48,
+                        48
+                      ],
+                      "fill": "#FFFFFF",
                       "width": 30,
                       "height": 30,
-                      "icon": "chevron_right",
-                      "library": "Material Symbols Rounded",
-                      "weight": 700,
-                      "fill": "$brand-purple"
+                      "stroke": "#6D28D9",
+                      "strokeWidth": 2.5,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
                     }
                   ]
                 }
@@ -3045,49 +3804,34 @@
         },
         {
           "type": "frame",
-          "id": "V7R81",
+          "id": "b2u9P",
           "x": 43,
-          "y": 1510,
-          "name": "Mobile Privacy Card",
+          "y": 1581,
+          "name": "Mobile Privacy Card — SVG Vector",
           "width": 706,
-          "height": 242,
+          "height": 265,
           "fill": "#FFFFFFE8",
           "cornerRadius": 16,
-          "stroke": "$line",
+          "stroke": "#B9A5ED",
           "strokeWidth": 1,
           "layout": "none",
           "children": [
             {
-              "type": "rectangle",
-              "id": "W84RU",
-              "x": 20,
-              "y": 13,
-              "name": "Mobile Privacy Phone",
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "public/privacy-phone-card-hd.png",
-                "mode": "fit"
-              },
-              "width": 314,
-              "height": 218
-            },
-            {
               "type": "text",
-              "id": "h2ve9",
+              "id": "Gwi1d",
               "x": 350,
               "y": 18,
               "name": "Mobile Privacy Title",
-              "fill": "$brand-navy",
+              "fill": "#160B4F",
               "content": "Secrets stay secret.",
-              "fontFamily": "$font",
+              "fontFamily": "Helvetica Neue",
               "fontSize": 28,
-              "fontWeight": "900",
+              "fontWeight": "700",
               "letterSpacing": -1
             },
             {
               "type": "text",
-              "id": "CFcTC",
+              "id": "z1Tdl",
               "x": 350,
               "y": 59,
               "name": "Mobile Privacy Intro",
@@ -3096,137 +3840,722 @@
               "width": 330,
               "content": "The word disappears when you\nlet go, switch apps, lock the phone,\nor lose focus.",
               "lineHeight": 1.15,
-              "fontFamily": "$font",
+              "fontFamily": "Helvetica Neue",
               "fontSize": 13,
               "fontWeight": "500"
             },
             {
               "type": "ellipse",
-              "id": "fEz0K",
+              "id": "ddAle",
               "x": 350,
               "y": 115,
               "name": "Mobile Privacy Check Circle 1",
-              "fill": "$brand-purple",
+              "fill": "#6D28D9",
               "width": 18,
               "height": 18
             },
             {
-              "type": "icon",
-              "id": "GancW",
+              "type": "path",
+              "id": "cGqBf",
               "x": 353,
               "y": 118,
               "name": "Mobile Privacy Check 1",
+              "geometry": "M2 6l3 3 5-6",
+              "viewBox": [
+                0,
+                0,
+                12,
+                12
+              ],
+              "fill": "#00000000",
               "width": 12,
               "height": 12,
-              "icon": "check",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "#FFFFFF"
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
             },
             {
               "type": "text",
-              "id": "G13OD",
+              "id": "xC6aP",
               "x": 379,
               "y": 113,
               "name": "Mobile Privacy Point 1",
               "fill": "#3A3451",
               "content": "Every player sees the same\nscreen and feedback.",
               "lineHeight": 1.05,
-              "fontFamily": "$font",
+              "fontFamily": "Helvetica Neue",
               "fontSize": 13,
               "fontWeight": "600"
             },
             {
               "type": "ellipse",
-              "id": "dW1iD",
+              "id": "F3cRN3",
               "x": 350,
               "y": 152,
               "name": "Mobile Privacy Check Circle 2",
-              "fill": "$brand-purple",
+              "fill": "#6D28D9",
               "width": 18,
               "height": 18
             },
             {
-              "type": "icon",
-              "id": "p2DcU5",
+              "type": "path",
+              "id": "YMsa2",
               "x": 353,
               "y": 155,
               "name": "Mobile Privacy Check 2",
+              "geometry": "M2 6l3 3 5-6",
+              "viewBox": [
+                0,
+                0,
+                12,
+                12
+              ],
+              "fill": "#00000000",
               "width": 12,
               "height": 12,
-              "icon": "check",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "#FFFFFF"
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
             },
             {
               "type": "text",
-              "id": "l64vd",
+              "id": "m6WD0a",
               "x": 379,
               "y": 150,
               "name": "Mobile Privacy Point 2",
               "fill": "#3A3451",
               "content": "Finished players cannot go\nback to their word.",
               "lineHeight": 1.05,
-              "fontFamily": "$font",
+              "fontFamily": "Helvetica Neue",
               "fontSize": 13,
               "fontWeight": "600"
             },
             {
               "type": "ellipse",
-              "id": "lcIUq",
+              "id": "IZPmx",
               "x": 350,
               "y": 189,
               "name": "Mobile Privacy Check Circle 3",
-              "fill": "$brand-purple",
+              "fill": "#6D28D9",
               "width": 18,
               "height": 18
             },
             {
-              "type": "icon",
-              "id": "ZoOe5",
+              "type": "path",
+              "id": "z4XQ8P",
               "x": 353,
               "y": 192,
               "name": "Mobile Privacy Check 3",
+              "geometry": "M2 6l3 3 5-6",
+              "viewBox": [
+                0,
+                0,
+                12,
+                12
+              ],
+              "fill": "#00000000",
               "width": 12,
               "height": 12,
-              "icon": "check",
-              "library": "Material Symbols Rounded",
-              "weight": 700,
-              "fill": "#FFFFFF"
+              "stroke": "#FFFFFF",
+              "strokeWidth": 2,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
             },
             {
               "type": "text",
-              "id": "TL3vC",
+              "id": "mJLnf",
               "x": 379,
               "y": 187,
               "name": "Mobile Privacy Point 3",
               "fill": "#3A3451",
               "content": "Refresh returns to a safe\nhandoff screen.",
               "lineHeight": 1.05,
-              "fontFamily": "$font",
+              "fontFamily": "Helvetica Neue",
               "fontSize": 13,
               "fontWeight": "600"
             },
             {
-              "type": "icon",
-              "id": "qYehu",
-              "x": 306,
-              "y": 5,
-              "name": "Mobile Privacy Sparkle",
-              "width": 34,
-              "height": 34,
-              "icon": "sparkles",
-              "library": "lucide",
-              "fill": "$brand-yellow"
+              "type": "frame",
+              "id": "yYj2j",
+              "x": 29,
+              "y": 9,
+              "name": "Mobile Proportional Phone Pass Illustration",
+              "width": 258,
+              "height": 240,
+              "fill": "#00000000",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tykrD",
+                  "x": 131.7499473,
+                  "y": 20.999991599999998,
+                  "name": "Desktop Pass Card Group",
+                  "rotation": -10,
+                  "width": 125.833283,
+                  "height": 179.999928,
+                  "fill": "#00000000",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 14.166661,
+                      "id": "DLESj",
+                      "x": 4.166665,
+                      "y": 4.999998,
+                      "name": "Desktop Card Thickness",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 145,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#54209A",
+                            "position": 0
+                          },
+                          {
+                            "color": "#260852",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 121.666618,
+                      "height": 174.99993
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 14.166661,
+                      "id": "WupwU",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Desktop Pass Card",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 145,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#A95BFF",
+                            "position": 0
+                          },
+                          {
+                            "color": "#762DE0",
+                            "position": 0.48
+                          },
+                          {
+                            "color": "#4A168D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 121.666618,
+                      "height": 174.99993,
+                      "stroke": "#2A075F",
+                      "strokeWidth": 2.499999,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#24104C4D",
+                        "offset": {
+                          "x": 0,
+                          "y": 5.833331
+                        },
+                        "blur": 4.999998
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "id": "C2NGyQ",
+                      "x": 10.833328999999999,
+                      "y": 10.833328999999999,
+                      "name": "Desktop Card Highlight",
+                      "geometry": "M0 0h119v17c-29-11-68-10-119 3z",
+                      "viewBox": [
+                        0,
+                        0,
+                        119,
+                        20
+                      ],
+                      "fill": "#D7A8FF38",
+                      "width": 99.166627,
+                      "height": 16.66666
+                    },
+                    {
+                      "type": "path",
+                      "id": "FpJ9G",
+                      "x": 10.833328999999999,
+                      "y": 12.499995,
+                      "name": "Desktop Card Edge Shine",
+                      "geometry": "M0.5 0v180",
+                      "viewBox": [
+                        0,
+                        0,
+                        1,
+                        180
+                      ],
+                      "fill": "#00000000",
+                      "width": 1,
+                      "height": 149.99994,
+                      "stroke": "#CFA1FF52",
+                      "strokeWidth": 1.666666
+                    },
+                    {
+                      "type": "text",
+                      "id": "SgF7A",
+                      "x": 18.333326,
+                      "y": 39.999984,
+                      "name": "Desktop Pass Label",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 103.333292,
+                      "content": "PASS",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 29.999988,
+                      "fontWeight": "800",
+                      "letterSpacing": -0.833333
+                    },
+                    {
+                      "type": "text",
+                      "id": "AZplO",
+                      "x": 20.833325,
+                      "y": 72.499971,
+                      "name": "Desktop Clockwise Label",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 109.999956,
+                      "content": "CLOCKWISE",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 12.9166615,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.1666666
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "qe8QX",
+                      "x": 40.833317,
+                      "y": 97.499961,
+                      "name": "Desktop Clockwise Ring",
+                      "innerRadius": 0.72,
+                      "startAngle": 20,
+                      "sweepAngle": 290,
+                      "fill": "#EFE3FF",
+                      "width": 51.666646,
+                      "height": 51.666646
+                    },
+                    {
+                      "type": "path",
+                      "id": "D68U2V",
+                      "x": 93.46336198837616,
+                      "y": 130.5504307701765,
+                      "name": "Desktop Clockwise Arrowhead",
+                      "rotation": -85.6244670274548,
+                      "geometry": "M0 22l5-22 18 13z",
+                      "viewBox": [
+                        0,
+                        0,
+                        23,
+                        22
+                      ],
+                      "fill": "#EFE3FF",
+                      "width": 19.166659,
+                      "height": 18.333326
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kmVFC",
+                  "x": -13,
+                  "y": 0,
+                  "name": "Desktop Phone Group",
+                  "width": 147.499941,
+                  "height": 222.499911,
+                  "fill": "#00000000",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3.333332,
+                      "id": "jQpSU",
+                      "x": 23.333324,
+                      "y": 59.999976,
+                      "name": "Desktop Left Button One",
+                      "fill": "#2B0D5D",
+                      "width": 6.666664,
+                      "height": 32.499987
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3.333332,
+                      "id": "fIBWJ",
+                      "x": 23.333324,
+                      "y": 99.166627,
+                      "name": "Desktop Left Button Two",
+                      "fill": "#2B0D5D",
+                      "width": 6.666664,
+                      "height": 23.333324
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2.9166655,
+                      "id": "YSYkV",
+                      "x": 141.66661,
+                      "y": 68.333306,
+                      "name": "Desktop Right Button",
+                      "fill": "#17052F",
+                      "width": 5.833331,
+                      "height": 45.833315
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 25.833323,
+                      "id": "GEw8g",
+                      "x": 28.333322,
+                      "y": 7.499997,
+                      "name": "Desktop Phone Outer",
+                      "fill": "#1A063A",
+                      "width": 118.333286,
+                      "height": 214.999914,
+                      "stroke": "#4E2581",
+                      "strokeWidth": 3.333332,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#1C063F6B",
+                        "offset": {
+                          "x": 0,
+                          "y": 6.666664
+                        },
+                        "blur": 5.833331
+                      }
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 22.499991,
+                      "id": "tCE8r",
+                      "x": 32.499987,
+                      "y": 10.833328999999999,
+                      "name": "Desktop Phone Body",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 150,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#3A176E",
+                            "position": 0
+                          },
+                          {
+                            "color": "#251052",
+                            "position": 0.18
+                          },
+                          {
+                            "color": "#100422",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 109.999956,
+                      "height": 206.666584,
+                      "stroke": "#190534",
+                      "strokeWidth": 2.499999
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 19.166659,
+                      "id": "oB3fs",
+                      "x": 37.499985,
+                      "y": 15.833327,
+                      "name": "Desktop Inner Highlight",
+                      "fill": "#00000000",
+                      "width": 99.99996,
+                      "height": 196.666588,
+                      "stroke": "#7545A761",
+                      "strokeWidth": 1.666666
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 13.333328,
+                      "id": "MwvmN",
+                      "x": 43.333315999999996,
+                      "y": 35.833319,
+                      "name": "Desktop Phone Screen",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 150,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#35136A",
+                            "position": 0
+                          },
+                          {
+                            "color": "#260D52",
+                            "position": 0.56
+                          },
+                          {
+                            "color": "#180632",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 88.333298,
+                      "height": 156.666604
+                    },
+                    {
+                      "type": "path",
+                      "id": "xBQK8",
+                      "x": 48.333314,
+                      "y": 40.833317,
+                      "name": "Desktop Screen Gloss",
+                      "geometry": "M0 0h92v56c-21-18-52-24-92-12z",
+                      "viewBox": [
+                        0,
+                        0,
+                        92,
+                        56
+                      ],
+                      "fill": "#8D58C814",
+                      "width": 76.666636,
+                      "height": 46.666648
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2.9166655,
+                      "id": "dChUX",
+                      "x": 71.666638,
+                      "y": 20.833325,
+                      "name": "Desktop Speaker",
+                      "fill": "#67438B",
+                      "width": 31.666654,
+                      "height": 5.833331
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2.0833325,
+                      "id": "PLdT3",
+                      "x": 70.833305,
+                      "y": 204.166585,
+                      "name": "Desktop Home Bar",
+                      "fill": "#69458D",
+                      "width": 33.33332,
+                      "height": 4.166665
+                    },
+                    {
+                      "type": "path",
+                      "id": "FSXKC",
+                      "x": 81.666634,
+                      "y": 45.833315,
+                      "name": "Desktop Lock Shackle",
+                      "geometry": "M0 21v-10a11 11 0 0 1 22 0v10",
+                      "viewBox": [
+                        0,
+                        0,
+                        22,
+                        21
+                      ],
+                      "fill": "#00000000",
+                      "width": 18.333326,
+                      "height": 17.499993,
+                      "stroke": "#FFFFFF",
+                      "strokeWidth": 4.166665,
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 4.999998,
+                      "id": "UIqta",
+                      "x": 78.333302,
+                      "y": 61.666641999999996,
+                      "name": "Desktop Lock Body",
+                      "fill": "#F7F3FF",
+                      "width": 24.99999,
+                      "height": 22.499991
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "QSp0s",
+                      "x": 88.08329810000001,
+                      "y": 67.2499731,
+                      "name": "Desktop Lock Keyhole",
+                      "fill": "#25104E",
+                      "width": 5.4999978,
+                      "height": 5.4999978
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1.2499995,
+                      "id": "jT1E7",
+                      "x": 89.5832975,
+                      "y": 71.666638,
+                      "name": "Desktop Lock Stem",
+                      "fill": "#25104E",
+                      "width": 2.499999,
+                      "height": 6.666664
+                    },
+                    {
+                      "type": "text",
+                      "id": "z1B65D",
+                      "x": 46.666648,
+                      "y": 89.999964,
+                      "name": "Desktop Press Label",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 81.666634,
+                      "content": "Press and hold",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 10.833328999999999,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 7.499997,
+                      "id": "OMoRI",
+                      "x": 54.166645,
+                      "y": 110.833289,
+                      "name": "Desktop Secret Panel",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 145,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#7040B0",
+                            "position": 0
+                          },
+                          {
+                            "color": "#4A237E",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 66.66664,
+                      "height": 44.166649,
+                      "stroke": "#7545AE",
+                      "strokeWidth": 1.2499995
+                    },
+                    {
+                      "type": "path",
+                      "id": "OxSDV",
+                      "x": 59.999976,
+                      "y": 115.833287,
+                      "name": "Desktop Panel Highlight",
+                      "geometry": "M0 0.5h66",
+                      "viewBox": [
+                        0,
+                        0,
+                        66,
+                        1
+                      ],
+                      "fill": "#00000000",
+                      "width": 54.999978,
+                      "height": 1,
+                      "stroke": "#A87CDC59",
+                      "strokeWidth": 0.833333
+                    },
+                    {
+                      "type": "text",
+                      "id": "RtGAK",
+                      "x": 54.166645,
+                      "y": 120.833285,
+                      "name": "Desktop Secret Line One",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 66.66664,
+                      "content": "Your word",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 9.166663,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PgqWm",
+                      "x": 54.166645,
+                      "y": 134.166613,
+                      "name": "Desktop Secret Line Two",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 66.66664,
+                      "content": "appears here",
+                      "textAlign": "center",
+                      "fontFamily": "Helvetica Neue",
+                      "fontSize": 9.166663,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "path",
+                      "id": "uHvNP",
+                      "x": 64.166641,
+                      "y": 158.33327,
+                      "name": "Desktop Eye",
+                      "geometry": "M0 18c9-12 18-18 28-18s19 6 28 18c-9 12-18 18-28 18s-19-6-28-18z",
+                      "viewBox": [
+                        0,
+                        0,
+                        56,
+                        36
+                      ],
+                      "fill": "#F8F4FF",
+                      "width": 46.666648,
+                      "height": 29.999988
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "IoNuP",
+                      "x": 79.999968,
+                      "y": 165.833267,
+                      "name": "Desktop Eye Iris",
+                      "fill": "#6130A0",
+                      "width": 14.999994,
+                      "height": 14.999994
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "WICox",
+                      "x": 84.5832995,
+                      "y": 170.4165985,
+                      "name": "Desktop Eye Pupil",
+                      "fill": "#16052F",
+                      "width": 5.833331,
+                      "height": 5.833331
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
           "type": "frame",
           "id": "zs1zi",
-          "x": 51,
-          "y": 1766,
+          "x": 50,
+          "y": 1873,
           "name": "Mobile FAQ",
           "width": 692,
           "height": 132,
@@ -3235,22 +4564,22 @@
             {
               "type": "text",
               "id": "oIGPu",
-              "x": 0,
+              "x": -7,
               "y": 0,
               "name": "Mobile FAQ Title",
               "fill": "$brand-navy",
               "content": "Good to know.",
               "fontFamily": "$font",
               "fontSize": 25,
-              "fontWeight": "900"
+              "fontWeight": "700"
             },
             {
               "type": "frame",
               "id": "nruPe",
-              "x": 0,
+              "x": -7,
               "y": 35,
               "name": "Mobile FAQ Item 1",
-              "width": 692,
+              "width": 706,
               "height": 33,
               "fill": "#FFFFFF",
               "cornerRadius": [
@@ -3294,10 +4623,10 @@
             {
               "type": "frame",
               "id": "uCwyJ",
-              "x": 0,
+              "x": -7,
               "y": 67,
               "name": "Mobile FAQ Item 2",
-              "width": 692,
+              "width": 706,
               "height": 33,
               "fill": "#FFFFFF",
               "stroke": "$line",
@@ -3335,10 +4664,10 @@
             {
               "type": "frame",
               "id": "gqNWS",
-              "x": 0,
+              "x": -7,
               "y": 99,
               "name": "Mobile FAQ Item 3",
-              "width": 692,
+              "width": 706,
               "height": 33,
               "fill": "#FFFFFF",
               "cornerRadius": [
@@ -3384,8 +4713,8 @@
         {
           "type": "frame",
           "id": "F8uOp",
-          "x": 0,
-          "y": 1915,
+          "x": -1,
+          "y": 2105,
           "name": "Mobile Footer",
           "width": 794,
           "height": 69,
@@ -3414,8 +4743,8 @@
             {
               "type": "text",
               "id": "LJARl",
-              "x": 247,
-              "y": 22,
+              "x": 246,
+              "y": 18,
               "name": "Mobile Footer Copy",
               "fill": "$muted",
               "content": "Free to play.\nBuilt for the room you are already in.",
@@ -3471,5 +4800,68 @@
       "value": "Helvetica Neue"
     }
   },
-  "fileToken": "96f92263-9537-4754-a9f5-40c18e0995d9"
+  "fileToken": "96f92263-9537-4754-a9f5-40c18e0995d9",
+  "fonts": [
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-ThinItalic.ttf",
+      "weight": 200
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-Thin.ttf",
+      "weight": 200
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-MediumItalic.ttf",
+      "weight": 500
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-Medium.ttf",
+      "weight": 500
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-CondensedBlack.ttf",
+      "weight": 900
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-LightItalic.ttf",
+      "style": "italic",
+      "weight": 300
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-Light.ttf",
+      "weight": 300
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-UltraLight.ttf",
+      "weight": 100
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-BoldItalic.ttf",
+      "style": "italic",
+      "weight": 700
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-Bold.ttf",
+      "weight": 700
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue-Italic.ttf",
+      "style": "italic"
+    },
+    {
+      "name": "Helvetica Neue",
+      "url": "fonts/HelveticaNeue/HelveticaNeue.ttf"
+    }
+  ]
 }

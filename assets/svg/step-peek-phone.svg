@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pass and peek">
+  <defs>
+    <linearGradient id="device" x1="12" y1="4" x2="52" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9149ED"/>
+      <stop offset="1" stop-color="#4C129D"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="2" width="40" height="60" rx="7" fill="url(#device)" stroke="#27075F" stroke-width="2"/>
+  <rect x="17" y="10" width="30" height="40" rx="3" fill="#7D35D3"/>
+  <path d="M20 30c4-7 8-10 12-10s8 3 12 10c-4 7-8 10-12 10s-8-3-12-10Z" fill="#fff"/>
+  <circle cx="32" cy="30" r="5" fill="#6420BC"/>
+  <circle cx="32" cy="30" r="2" fill="#2A075E"/>
+  <path d="M27 6h10" stroke="#E4D3FF" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="32" cy="56" r="2.5" fill="#fff"/>
+</svg>

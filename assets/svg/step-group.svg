@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 64" role="img" aria-label="Choose your group">
+  <defs>
+    <linearGradient id="people" x1="12" y1="8" x2="59" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9349ED"/>
+      <stop offset="1" stop-color="#4F139E"/>
+    </linearGradient>
+  </defs>
+  <circle cx="36" cy="15" r="10" fill="url(#people)" stroke="#2A0A67" stroke-width="2"/>
+  <circle cx="15" cy="25" r="7" fill="#A665F0" stroke="#2A0A67" stroke-width="2"/>
+  <circle cx="57" cy="25" r="7" fill="#A665F0" stroke="#2A0A67" stroke-width="2"/>
+  <path d="M20 57v-9c0-11 7-18 16-18s16 7 16 18v9H20Z" fill="url(#people)" stroke="#2A0A67" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M2 57v-7c0-8 5-13 13-13 3 0 5 .7 7 2-4 5-6 11-6 18H2ZM70 57v-7c0-8-5-13-13-13-3 0-5 .7-7 2 4 5 6 11 6 18h14Z" fill="#7B32D1" stroke="#2A0A67" stroke-width="2" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="One shared phone">
+  <defs>
+    <linearGradient id="phone" x1="16" y1="5" x2="48" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8D48EC"/>
+      <stop offset="1" stop-color="#4E159F"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="3" width="36" height="58" rx="7" fill="url(#phone)"/>
+  <rect x="19" y="10" width="26" height="40" rx="2" fill="#F8F5FF"/>
+  <path d="M27 7h10" stroke="#E9DBFF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="32" cy="55.5" r="2.5" fill="#F8F5FF"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fast start lightning">
+  <defs>
+    <linearGradient id="bolt" x1="14" y1="8" x2="48" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9B5CFF"/>
+      <stop offset="1" stop-color="#5B18C8"/>
+    </linearGradient>
+  </defs>
+  <path d="M29 4 11 35h17l-5 25 30-37H36L46 4H29Z" fill="url(#bolt)"/>
+  <path d="m14 31 11-19h9L23 31h-9Z" fill="#C7A9FF" opacity=".42"/>
+</svg>

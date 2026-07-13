@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const plausibleInitScript = `
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+`;
+
 export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
@@ -33,6 +38,12 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7093360885280732"
           crossOrigin="anonymous"
         />
+        {/* Privacy-friendly analytics by Plausible */}
+        <script
+          async
+          src="https://plausible.io/js/pa-RQ0FeB74DcbArNDGnf8rt.js"
+        />
+        <script dangerouslySetInnerHTML={{ __html: plausibleInitScript }} />
       </head>
       <body>{children}</body>
       <Script
