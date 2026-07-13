@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, PencilSimple, Shuffle } from "@phosphor-icons/react";
+import { Check, Lightning, PencilSimple, Shuffle } from "@phosphor-icons/react";
 
 import {
   PLAYER_COUNTS,
@@ -93,6 +93,9 @@ export function SetupScreen({
         >
           <Shuffle weight="bold" aria-hidden="true" />
           Random words
+          {mode === "system" ? (
+            <Check weight="bold" className="mode-check" aria-hidden="true" />
+          ) : null}
         </button>
         <button
           type="button"
@@ -101,6 +104,9 @@ export function SetupScreen({
         >
           <PencilSimple weight="bold" aria-hidden="true" />
           Custom words
+          {mode === "custom" ? (
+            <Check weight="bold" className="mode-check" aria-hidden="true" />
+          ) : null}
         </button>
       </div>
 
@@ -157,6 +163,7 @@ export function SetupScreen({
         disabled={playerCount === null}
         onClick={mode === "system" ? onStartSystemGame : startCustomGame}
       >
+        <Lightning weight="fill" aria-hidden="true" />
         Play
       </button>
     </section>

@@ -1,3 +1,6 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+
 import { ImageResponse } from "next/og";
 
 export const alt = "Quick Imposter free online word game";
@@ -7,7 +10,18 @@ export const size = {
 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+async function getLogoDataUrl() {
+  const logoData = await readFile(
+    join(process.cwd(), "public/quick-imposter-logo.png"),
+    "base64",
+  );
+
+  return `data:image/png;base64,${logoData}`;
+}
+
+export default async function OpenGraphImage() {
+  const logoSrc = await getLogoDataUrl();
+
   return new ImageResponse(
     (
       <div
@@ -17,53 +31,51 @@ export default function OpenGraphImage() {
           display: "flex",
           position: "relative",
           overflow: "hidden",
-          background: "#f4efe6",
+          background: "#ffffff",
           color: "#10162f",
-          padding: "72px 82px",
-          flexDirection: "column",
+          padding: "34px 50px 34px 30px",
+          alignItems: "center",
           justifyContent: "space-between",
           border: "22px solid #10162f",
         }}
       >
+        <img
+          src={logoSrc}
+          alt=""
+          width={540}
+          height={540}
+          style={{ objectFit: "contain" }}
+        />
         <div
           style={{
             display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            fontSize: 30,
-            fontWeight: 800,
-            letterSpacing: "0.06em",
-            textTransform: "uppercase",
-          }}
-        >
-          <span>Quick Imposter</span>
-          <span
-            style={{
-              display: "flex",
-              background: "#ff5f57",
-              padding: "12px 20px",
-              border: "4px solid #10162f",
-              borderRadius: 14,
-            }}
-          >
-            Free to play
-          </span>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            maxWidth: 920,
+            width: 510,
+            height: "100%",
+            padding: "54px 0 52px",
             flexDirection: "column",
+            justifyContent: "center",
           }}
         >
           <div
             style={{
               display: "flex",
-              fontSize: 82,
-              lineHeight: 0.95,
-              fontWeight: 900,
-              letterSpacing: "-0.055em",
+              color: "#6d1cc2",
+              fontSize: 25,
+              fontWeight: 800,
+              letterSpacing: "0.08em",
               textTransform: "uppercase",
+            }}
+          >
+            Free party word game
+          </div>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 24,
+              fontSize: 68,
+              lineHeight: 0.98,
+              fontWeight: 900,
+              letterSpacing: "-0.05em",
             }}
           >
             Imposter Game Online
@@ -71,27 +83,30 @@ export default function OpenGraphImage() {
           <div
             style={{
               display: "flex",
-              marginTop: 30,
-              fontSize: 34,
+              marginTop: 26,
+              fontSize: 29,
+              lineHeight: 1.2,
               fontWeight: 650,
             }}
           >
             One phone. Secret words. Ready in 30 seconds.
           </div>
+          <div
+            style={{
+              display: "flex",
+              alignSelf: "flex-start",
+              marginTop: 34,
+              padding: "12px 20px",
+              border: "4px solid #10162f",
+              borderRadius: 14,
+              background: "#ffbf00",
+              fontSize: 26,
+              fontWeight: 850,
+            }}
+          >
+            Play free — no signup
+          </div>
         </div>
-        <div
-          style={{
-            position: "absolute",
-            display: "flex",
-            right: -70,
-            bottom: -92,
-            width: 310,
-            height: 310,
-            borderRadius: 999,
-            background: "#2d5bff",
-            border: "18px solid #10162f",
-          }}
-        />
       </div>
     ),
     size,

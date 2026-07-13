@@ -195,7 +195,11 @@ export function GameExperience() {
   }
 
   return (
-    <div className="game-experience">
+    <div
+      className="game-experience"
+      data-phase={state.phase}
+      data-active={state.phase !== "setup"}
+    >
       {storageNotice ? (
         <div className="storage-notice" role="status">
           <span>{storageNotice}</span>
