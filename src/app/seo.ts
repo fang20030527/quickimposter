@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const SITE_NAME = "Quick Imposter";
-export const SITE_URL = "https://quickimposter.org";
+export const SITE_URL = "https://www.quickimposter.org";
 export const SEO_TITLE =
   "Free Imposter Game Online & Word Generator | Quick Imposter";
 export const SEO_DESCRIPTION =

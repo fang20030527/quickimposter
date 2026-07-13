@@ -1,11 +1,11 @@
 # Quick Imposter Sitemap Cleanup Design
 
 Date: 2026-07-12
-Status: Approved direction, pending written-spec review
+Status: Approved
 
 ## Goal
 
-Keep `https://quickimposter.org/sitemap.xml` limited to real, canonical, indexable pages and remove metadata that does not provide a useful search-engine signal.
+Keep `https://www.quickimposter.org/sitemap.xml` limited to real, canonical, indexable pages and remove metadata that does not provide a useful search-engine signal.
 
 ## Current Site Structure
 
@@ -13,7 +13,7 @@ The App Router currently exposes one indexable page:
 
 | Route | Canonical URL | Include in sitemap |
 | --- | --- | --- |
-| `/` | `https://quickimposter.org` | Yes |
+| `/` | `https://www.quickimposter.org` | Yes |
 
 Metadata endpoints such as `/robots.txt`, `/sitemap.xml`, the app icon, and the generated Open Graph image are not content pages and will not be listed. No future or placeholder routes will be added.
 
@@ -40,7 +40,7 @@ Next.js will serialize the typed `MetadataRoute.Sitemap` result to valid sitemap
 The sitemap must contain:
 
 - One `<url>` entry
-- One `<loc>` value: `https://quickimposter.org`
+- One `<loc>` value: `https://www.quickimposter.org`
 - No non-canonical, redirected, private, generated metadata, or placeholder URLs
 - No `priority`, `changefreq`, or fabricated `lastmod` fields
 
@@ -51,7 +51,7 @@ Automated checks will assert that:
 - The sitemap returns only the canonical homepage URL.
 - Every sitemap URL uses HTTPS.
 - Sitemap entries do not include ignored or unsupported freshness hints.
-- `robots.ts` references `https://quickimposter.org/sitemap.xml`.
+- `robots.ts` references `https://www.quickimposter.org/sitemap.xml`.
 
 Project verification will run the focused SEO test, the full test suite, lint, and a production build. The build output will confirm that `/sitemap.xml` and `/robots.txt` compile under the installed Next.js 16.2.10 conventions.
 

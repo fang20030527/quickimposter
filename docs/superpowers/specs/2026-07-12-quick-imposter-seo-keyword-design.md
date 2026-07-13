@@ -7,7 +7,7 @@ Status: Approved direction, pending written-spec review
 
 Improve the English homepage's organic-search relevance for people who want to start an in-person imposter word game immediately, while preserving the product's fast, game-first experience.
 
-The canonical production origin is `https://quickimposter.org`. The first target market is the United States, with the United Kingdom, Australia, and Canada as secondary English-language markets.
+The canonical production origin is `https://www.quickimposter.org`. The first target market is the United States, with the United Kingdom, Australia, and Canada as secondary English-language markets.
 
 ## Evidence and Keyword Selection
 
@@ -93,7 +93,7 @@ FAQ copy will answer genuine gameplay questions and support relevant long tails.
 
 ## Metadata and Technical SEO
 
-`src/app/layout.tsx` will define site-wide metadata using `https://quickimposter.org` as `metadataBase` and canonical origin. The homepage will include:
+`src/app/layout.tsx` will define site-wide metadata using `https://www.quickimposter.org` as `metadataBase` and canonical origin. The homepage will include:
 
 - Search title and description aligned with the selected keyword cluster
 - Canonical URL `/`

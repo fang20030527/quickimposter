@@ -13,6 +13,7 @@ import sitemap from "./sitemap";
 
 describe("homepage SEO", () => {
   it("targets the approved keyword cluster with a canonical URL", () => {
+    expect(SITE_URL).toBe("https://www.quickimposter.org");
     expect(siteMetadata.title).toBe(SEO_TITLE);
     expect(siteMetadata.description).toBe(SEO_DESCRIPTION);
     expect(siteMetadata.metadataBase?.toString()).toBe(`${SITE_URL}/`);

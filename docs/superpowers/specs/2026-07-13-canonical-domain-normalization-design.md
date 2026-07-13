@@ -1,7 +1,7 @@
 # Quick Imposter Canonical Domain Normalization Design
 
 Date: 2026-07-13
-Status: Approved direction, pending written-spec review
+Status: Approved
 
 ## Goal
 

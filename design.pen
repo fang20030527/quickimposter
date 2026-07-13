@@ -3468,7 +3468,7 @@
     },
     "font": {
       "type": "string",
-      "value": "Nunito Sans"
+      "value": "Helvetica Neue"
     }
   },
   "fileToken": "96f92263-9537-4754-a9f5-40c18e0995d9"

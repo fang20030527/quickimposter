@@ -4,7 +4,7 @@ Quick Imposter currently has one public, canonical page:
 
 | Route | Canonical URL | Sitemap |
 | --- | --- | --- |
-| `/` | `https://quickimposter.org` | Included |
+| `/` | `https://www.quickimposter.org` | Included |
 
 Next.js metadata endpoints (`/sitemap.xml`, `/robots.txt`, icons, and Open Graph images) are not content pages and are excluded from the sitemap.
 
