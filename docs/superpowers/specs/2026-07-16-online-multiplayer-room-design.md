@@ -110,8 +110,9 @@ The recommended deployment is Vercel plus Supabase Postgres and Realtime.
 
 - Next.js renders pages and owns all mutation and secret-reading endpoints.
 - Supabase Postgres is the authoritative room state store.
-- Supabase Realtime emits secret-free room change events.
-- Clients receiving an event fetch a fresh sanitized room snapshot from Next.js.
+- Core room tables live in a non-exposed `private` schema. Transactional commands are Postgres functions invoked by the service role through explicitly granted, security-invoker RPC wrappers.
+- Supabase Realtime Broadcast emits a public `room_changed` invalidation on an unguessable room topic. Its payload contains only the new room version.
+- Clients receiving a Broadcast fetch a fresh sanitized room snapshot from Next.js.
 - The Supabase service-role credential exists only in server code.
 - Direct anonymous clients cannot select or mutate secret-bearing room, round, assignment, or session tables.
 
@@ -132,7 +133,7 @@ Before implementation, dependencies must be installed and the relevant local Nex
 - `room-service`: implements create, join, start, ready, reveal, replay, cancel, heartbeat, and close commands.
 - `room-repository`: contains focused Postgres queries and transaction calls.
 - `room-session`: creates, hashes, stores, reads, and clears host/player session tokens.
-- `use-room-realtime`: owns subscription lifecycle and emits only refetch signals.
+- `use-room-realtime`: owns the public Broadcast subscription lifecycle and emits only refetch signals.
 
 Existing local components may contribute small presentational primitives, but online orchestration must not be added to the local `gameReducer` or `sessionStore`.
 
@@ -157,7 +158,7 @@ Every mutation includes the client's last observed room version. The database tr
 - The expected version matches
 - The acting player belongs to the current round when required
 
-Successful commands increment the version exactly once and emit a secret-free room event. Stale or duplicate commands return a conflict response, after which the client refetches the snapshot.
+Successful commands increment the version exactly once and call `realtime.send` with a public room topic, the `room_changed` event name, and a payload containing only the new version. Stale or duplicate commands return a conflict response, after which the client refetches the snapshot.
 
 ## 8. Data Model
 
@@ -204,12 +205,9 @@ Raw session tokens are never stored in the database.
 - Server-only civilian/imposter assignment
 - Ready timestamp
 
-### `room_events`
+### Realtime invalidation
 
-- Room ID, room version, event type, and timestamp
-- No nickname, token, word, role, or result payload
-
-Clients use events only as invalidation signals. The sanitized snapshot endpoint remains the source for public room data.
+Realtime invalidation does not expose a room table or event table to anonymous Data API access. A successful command publishes `{ version }` to the public Broadcast topic `room:[roomId]` with event name `room_changed`. The room ID contains at least 128 bits of randomness, the payload carries no game data, and the sanitized snapshot endpoint remains the source for public room state.
 
 ## 9. Identity, Privacy, and Security
 
@@ -228,7 +226,7 @@ Clients use events only as invalidation signals. The sanitized snapshot endpoint
 
 ## 10. Presence, Reconnection, and Expiry
 
-- Active room clients maintain a lightweight heartbeat. Realtime presence improves responsiveness but does not replace persisted heartbeat timestamps.
+- Active room clients maintain a lightweight authenticated heartbeat. Persisted heartbeat timestamps, not Realtime connection state, decide lifecycle transitions.
 - Refreshing or briefly disconnecting in the same browser restores the player through the session cookie.
 - A disconnected participant remains in the current immutable round snapshot so reconnection cannot change role distribution.
 - Outside an active round, a non-host player who remains disconnected for five minutes is marked removed and stops consuming one of the 12 room slots. A returning browser may join again if capacity remains.
