@@ -125,4 +125,115 @@ describe("room repository", () => {
       postgresError,
     );
   });
+
+  it("loads the authoritative category and recent pair ids with one function call", async () => {
+    const context = { category: "Food", recentPairIds: ["food-apple-orange"] };
+    const query = vi.fn().mockResolvedValue({ rows: [{ result: context }] });
+    const repository = createRoomRepository({ query } as never);
+
+    await expect(
+      repository.getRecentPairIds(
+        snapshot.roomId,
+        session.id,
+        session.playerTokenDigest,
+        session.hostTokenDigest!,
+      ),
+    ).resolves.toBe(context);
+    expect(query).toHaveBeenCalledWith(
+      expect.stringContaining("private.get_online_recent_pair_ids"),
+      [
+        snapshot.roomId,
+        session.id,
+        session.playerTokenDigest,
+        session.hostTokenDigest,
+      ],
+    );
+  });
+
+  it("fetches a secret with only the acting session digest", async () => {
+    const secret = { word: "Apple" };
+    const query = vi.fn().mockResolvedValue({ rows: [{ result: secret }] });
+    const repository = createRoomRepository({ query } as never);
+
+    await expect(
+      repository.getSecret(snapshot.roomId, session.id, session.playerTokenDigest),
+    ).resolves.toBe(secret);
+    expect(query).toHaveBeenCalledWith(
+      expect.stringContaining("private.get_online_player_secret"),
+      [snapshot.roomId, session.id, session.playerTokenDigest],
+    );
+  });
+
+  it("starts a round with one parameterized function call", async () => {
+    const commandResult = { ok: true as const, version: 2 };
+    const query = vi.fn().mockResolvedValue({ rows: [{ result: commandResult }] });
+    const repository = createRoomRepository({ query } as never);
+    const input = {
+      roomId: snapshot.roomId,
+      sessionId: session.id,
+      playerDigest: session.playerTokenDigest,
+      hostDigest: session.hostTokenDigest!,
+      expectedVersion: 1,
+      round: {
+        id: "33333333-3333-4333-8333-333333333333",
+        wordPairId: "food-apple-orange",
+        category: "Food" as const,
+        civilianWord: "Apple",
+        imposterWord: "Orange",
+      },
+    };
+
+    await expect(repository.startRound(input)).resolves.toBe(commandResult);
+    expect(query).toHaveBeenCalledWith(
+      expect.stringContaining("private.start_online_round"),
+      [
+        input.roomId,
+        input.sessionId,
+        input.playerDigest,
+        input.hostDigest,
+        input.expectedVersion,
+        input.round,
+      ],
+    );
+  });
+
+  it.each([
+    ["ready", "mark_online_player_ready", null],
+    ["reveal-imposter", "reveal_online_imposter", session.hostTokenDigest],
+    ["reveal-civilian", "reveal_online_civilian", session.hostTokenDigest],
+    ["play-again", "replay_online_room", session.hostTokenDigest],
+    ["cancel-round", "cancel_online_round", session.hostTokenDigest],
+    ["close-room", "close_online_room", session.hostTokenDigest],
+  ] as const)("maps %s to private.%s", async (type, functionName, hostDigest) => {
+    const commandResult = { ok: true as const, version: 3 };
+    const query = vi.fn().mockResolvedValue({ rows: [{ result: commandResult }] });
+    const repository = createRoomRepository({ query } as never);
+    const input = {
+      roomId: snapshot.roomId,
+      sessionId: session.id,
+      playerDigest: session.playerTokenDigest,
+      hostDigest,
+      command: { type, expectedVersion: 2 },
+    };
+
+    await expect(repository.runCommand(input)).resolves.toBe(commandResult);
+    expect(query).toHaveBeenCalledOnce();
+    expect(query.mock.calls[0][0]).toContain(`private.${functionName}`);
+    expect(query.mock.calls[0][1]).toEqual(
+      hostDigest
+        ? [input.roomId, input.sessionId, input.playerDigest, hostDigest, 2]
+        : [input.roomId, input.sessionId, input.playerDigest, 2],
+    );
+  });
+
+  it("runs the bounded global cleanup function without table access", async () => {
+    const query = vi.fn().mockResolvedValue({ rows: [{ result: 4 }] });
+    const repository = createRoomRepository({ query } as never);
+
+    await expect(repository.cleanupStaleRooms()).resolves.toBe(4);
+    expect(query).toHaveBeenCalledWith(
+      expect.stringContaining("private.cleanup_online_rooms()"),
+      [],
+    );
+  });
 });
