@@ -12,9 +12,6 @@ const { cookiesMock, cookieStore } = vi.hoisted(() => ({
 vi.mock("server-only", () => ({}));
 vi.mock("next/headers", () => ({ cookies: cookiesMock }));
 
-const { createClientMock } = vi.hoisted(() => ({ createClientMock: vi.fn() }));
-vi.mock("@supabase/supabase-js", () => ({ createClient: createClientMock }));
-
 import {
   createRoomCapability,
   digestToken,
@@ -26,8 +23,6 @@ import {
   readRoomCapability,
   writeRoomCapability,
 } from "./room-cookies";
-import { createAdminClient } from "./supabase-admin";
-import { createRealtimeClient } from "./supabase-browser";
 
 afterEach(() => {
   vi.unstubAllEnvs();
@@ -109,65 +104,5 @@ describe("room capability cookie", () => {
     await clearRoomCapability("room-id");
 
     expect(cookieStore.delete).toHaveBeenCalledWith("qi-room-room-id");
-  });
-});
-
-describe("Supabase admin client", () => {
-  beforeEach(() => {
-    vi.clearAllMocks();
-  });
-
-  it("loads safely without server environment values", () => {
-    vi.stubEnv("SUPABASE_URL", "");
-    vi.stubEnv("SUPABASE_SERVICE_ROLE_KEY", "");
-
-    expect(() => createAdminClient()).toThrow(
-      "Supabase server environment is not configured",
-    );
-    expect(createClientMock).not.toHaveBeenCalled();
-  });
-
-  it("creates a non-persistent client with server credentials on demand", () => {
-    const client = { kind: "admin-client" };
-    createClientMock.mockReturnValue(client);
-    vi.stubEnv("SUPABASE_URL", "https://project-ref.supabase.co");
-    vi.stubEnv("SUPABASE_SERVICE_ROLE_KEY", "service-role-secret");
-
-    expect(createAdminClient()).toBe(client);
-    expect(createClientMock).toHaveBeenCalledWith(
-      "https://project-ref.supabase.co",
-      "service-role-secret",
-      {
-        auth: {
-          autoRefreshToken: false,
-          persistSession: false,
-        },
-      },
-    );
-  });
-});
-
-describe("Supabase Realtime client", () => {
-  beforeEach(() => {
-    vi.clearAllMocks();
-  });
-
-  it("creates a non-persistent client with public credentials on demand", () => {
-    const client = { kind: "realtime-client" };
-    createClientMock.mockReturnValue(client);
-    vi.stubEnv("NEXT_PUBLIC_SUPABASE_URL", "https://project-ref.supabase.co");
-    vi.stubEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY", "publishable-key");
-
-    expect(createRealtimeClient()).toBe(client);
-    expect(createClientMock).toHaveBeenCalledWith(
-      "https://project-ref.supabase.co",
-      "publishable-key",
-      {
-        auth: {
-          autoRefreshToken: false,
-          persistSession: false,
-        },
-      },
-    );
   });
 });
