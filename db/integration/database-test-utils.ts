@@ -48,6 +48,25 @@ export async function withRuntimeRole<T>(
   }
 }
 
+export async function withRuntimeRoleCommitted<T>(
+  operation: (client: PoolClient) => Promise<T>,
+) {
+  const client = await ownerPool().connect();
+
+  try {
+    await client.query("begin");
+    await client.query("set local role quickimposter_app");
+    const result = await operation(client);
+    await client.query("commit");
+    return result;
+  } catch (error) {
+    await rollback(client);
+    throw error;
+  } finally {
+    client.release();
+  }
+}
+
 export async function resetDatabase() {
   await ownerPool().query(`
     update private.rooms
