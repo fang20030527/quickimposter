@@ -8,7 +8,7 @@ Online mode includes:
 
 - Account-free room creation and joining
 - A shareable invitation link
-- A realtime lobby for 3–12 active players
+- A synchronized lobby for 3–12 active players
 - Server-side word-pair and imposter assignment
 - One private word view per player on that player's own device
 - Synchronized ready, discussion, staged reveal, and result phases
@@ -106,14 +106,17 @@ The route sets noindex metadata and is excluded from the sitemap. Robots rules m
 
 ## 5. Application Architecture
 
-The recommended deployment is Vercel plus Supabase Postgres and Realtime.
+The recommended deployment is Vercel Fluid Compute plus Neon Postgres.
 
-- Next.js renders pages and owns all mutation and secret-reading endpoints.
-- Supabase Postgres is the authoritative room state store.
-- Core room tables live in a non-exposed `private` schema. Transactional commands are Postgres functions invoked by the service role through explicitly granted, security-invoker RPC wrappers.
-- Supabase Realtime Broadcast emits a public `room_changed` invalidation on an unguessable room topic. Its payload contains only the new room version.
-- Clients receiving a Broadcast fetch a fresh sanitized room snapshot from Next.js.
-- The Supabase service-role credential exists only in server code.
+- Next.js renders pages and owns all room, mutation, heartbeat, and secret-reading endpoints.
+- Neon Postgres is the authoritative room state store.
+- The server uses `pg` with a process-level pool registered through `attachDatabasePool` from `@vercel/functions`. Vercel receives a pooled `DATABASE_URL`; schema migrations use a separate direct `DATABASE_URL_UNPOOLED`.
+- Versioned SQL files live under `db/migrations/`, are applied in lexical order through the direct connection, and are recorded with a checksum in a migration ledger so an applied file cannot change silently.
+- Core room tables live in a `private` schema. The runtime application role has no direct table privileges and may execute only the approved transaction functions.
+- Transaction functions that need table access are `SECURITY DEFINER`, owned by the migration role, use a fixed safe `search_path`, schema-qualify data access, and have `PUBLIC` execution revoked.
+- The browser receives no Neon connection string or database credential. It synchronizes through sanitized Next.js snapshots and never connects directly to Postgres.
+- Foreground clients poll the room version every second. An unchanged version returns `204`; a changed version returns a fresh sanitized snapshot. Background tabs poll every five seconds.
+- A request-triggered cleanup function enforces host absence and room expiry before room data is returned. Vercel Cron is an optional backlog-cleanup supplement, not a correctness dependency.
 - Direct anonymous clients cannot select or mutate secret-bearing room, round, assignment, or session tables.
 
 The browser never treats local state as authoritative. It renders the most recent server snapshot and resynchronizes after reconnecting or encountering a version conflict.
@@ -124,16 +127,18 @@ Before implementation, dependencies must be installed and the relevant local Nex
 
 - `GameModeSetup`: selects Local or Online on the homepage and delegates to the correct setup form.
 - `OnlineSetup`: validates the host nickname and category and requests room creation.
-- `OnlineRoomController`: subscribes to room events, fetches snapshots, manages reconnect state, and selects the screen for the authoritative phase.
+- `OnlineRoomController`: consumes synchronized room snapshots, manages reconnect state, and selects the screen for the authoritative phase.
 - `JoinRoomScreen`: validates and submits a guest nickname without owning lobby behavior.
 - `LobbyScreen`: renders invitation copying, roster state, waiting players, and host-only start controls.
 - `OnlineSecretScreen`: adapts the existing private reveal interaction to a server-provided personal word.
 - `OnlineDiscussionScreen`: renders shared discussion instructions and host-only reveal initiation.
 - `OnlineRevealFlow`: renders the staged public result and host-only transitions.
 - `room-service`: implements create, join, start, ready, reveal, replay, cancel, heartbeat, and close commands.
-- `room-repository`: contains focused Postgres queries and transaction calls.
-- `room-session`: creates, hashes, stores, reads, and clears host/player session tokens.
-- `use-room-realtime`: owns the public Broadcast subscription lifecycle and emits only refetch signals.
+- `neon-pool`: owns the server-only `pg` pool and Vercel Fluid lifecycle registration.
+- `room-repository`: contains focused Postgres function calls and result mapping.
+- `room-session`: creates, parses, and hashes host/player capability tokens.
+- `room-cookies`: stores, reads, and clears room-scoped capability cookies.
+- `use-room-sync`: owns foreground/background polling, version checks, retry backoff, and focus/network recovery.
 
 Existing local components may contribute small presentational primitives, but online orchestration must not be added to the local `gameReducer` or `sessionStore`.
 
@@ -158,7 +163,7 @@ Every mutation includes the client's last observed room version. The database tr
 - The expected version matches
 - The acting player belongs to the current round when required
 
-Successful commands increment the version exactly once and call `realtime.send` with a public room topic, the `room_changed` event name, and a payload containing only the new version. Stale or duplicate commands return a conflict response, after which the client refetches the snapshot.
+Successful commands increment the version exactly once. The command response triggers an immediate snapshot refresh rather than waiting for the next polling interval. Stale or duplicate commands return a conflict response, after which the client also refetches the snapshot.
 
 ## 8. Data Model
 
@@ -205,16 +210,16 @@ Raw session tokens are never stored in the database.
 - Server-only civilian/imposter assignment
 - Ready timestamp
 
-### Realtime invalidation
+### Version synchronization
 
-Realtime invalidation does not expose a room table or event table to anonymous Data API access. A successful command publishes `{ version }` to the public Broadcast topic `room:[roomId]` with event name `room_changed`. The room ID contains at least 128 bits of randomness, the payload carries no game data, and the sanitized snapshot endpoint remains the source for public room state.
+The client sends its last observed room version to the snapshot endpoint. The endpoint performs lifecycle cleanup, verifies room visibility, and returns `204` when the authoritative version is unchanged. When the version changes, it returns a no-store sanitized snapshot. Foreground tabs check every second; hidden tabs check every five seconds. A successful command, browser focus, restored network connection, or retry recovery causes an immediate check. Repeated failures use bounded exponential backoff. The snapshot endpoint remains the only source for shared room state.
 
 ## 9. Identity, Privacy, and Security
 
 - Room IDs use at least 128 bits of cryptographically secure randomness and are not sequential.
 - Player and host session tokens use at least 256 bits of cryptographically secure randomness.
 - Tokens are stored in Secure, HttpOnly, SameSite cookies scoped as narrowly as the framework permits.
-- The database stores only SHA-256 token digests, and the server compares digests in constant time. The tokens themselves already contain at least 256 bits of random entropy.
+- The database stores only SHA-256 token digests. The server hashes presented capability tokens before a transaction function compares them with stored digests; raw tokens never reach Postgres. The tokens contain at least 256 bits of random entropy.
 - Host commands require both the player session and host capability.
 - Player commands can fetch only the acting player's word and update only the acting player's ready state.
 - A sanitized room snapshot exposes nicknames, connection/waiting state, ready counts, lifecycle phase, version, and results only after the corresponding reveal phase.
@@ -223,23 +228,26 @@ Realtime invalidation does not expose a room table or event table to anonymous D
 - Nicknames are trimmed, contain 2–20 visible characters, and are unique among non-removed room members after case-insensitive normalization.
 - Room creation, joining, snapshot, secret fetch, and mutation endpoints have per-IP/session rate limits and bounded request bodies.
 - All mutations use schema validation and database constraints in addition to UI validation.
+- Neon credentials exist only in server environment variables. No database value uses a `NEXT_PUBLIC_` prefix.
+- The migration role uses the direct connection only for schema operations. The runtime application role cannot read tables and can execute only explicitly granted functions.
 
 ## 10. Presence, Reconnection, and Expiry
 
-- Active room clients maintain a lightweight authenticated heartbeat. Persisted heartbeat timestamps, not Realtime connection state, decide lifecycle transitions.
+- Active room clients send a lightweight authenticated heartbeat approximately every 15 seconds. Snapshot polling is read-only, and persisted heartbeat timestamps decide lifecycle transitions.
 - Refreshing or briefly disconnecting in the same browser restores the player through the session cookie.
 - A disconnected participant remains in the current immutable round snapshot so reconnection cannot change role distribution.
 - Outside an active round, a non-host player who remains disconnected for five minutes is marked removed and stops consuming one of the 12 room slots. A returning browser may join again if capacity remains.
 - A disconnected host causes other players to see a waiting banner and five-minute countdown.
-- A scheduled database cleanup closes the room when the authenticated host heartbeat has been absent for five consecutive minutes.
+- Every room read or mutation invokes cleanup before returning data. Cleanup closes the room when the authenticated host heartbeat has been absent for five consecutive minutes.
 - Every room has a six-hour hard expiry measured from creation, even if heartbeats continue.
 - Closing revokes sessions and clears unrevealed secret assignment data while retaining a minimal closed-room tombstone long enough for deterministic homepage redirection.
+- An optional Vercel Cron job removes old tombstones and stale rate-limit buckets in the background. Correct redirects and room closure do not depend on its schedule.
 
 ## 11. Failure Handling
 
 - During network loss, the client keeps the current safe screen, displays reconnect status, and disables state-changing controls.
 - Reconnection always fetches a new snapshot before re-enabling commands.
-- If Realtime is unavailable, the controller temporarily uses low-frequency snapshot polling and resubscribes with backoff.
+- Poll failures keep the last safe snapshot visible and use bounded exponential backoff. Browser focus and restored connectivity trigger an immediate retry.
 - Full room, duplicate nickname, validation failure, unauthorized session, stale version, and temporarily unavailable service receive distinct user-safe responses.
 - Transactions make room creation, round creation, assignment, ready-to-discussion advancement, reveal, replay, cancellation, and closure atomic.
 - The client never optimistically shows a secret or reveal result.
@@ -268,13 +276,14 @@ Realtime invalidation does not expose a room table or event table to anonymous D
 
 ### Database integration tests
 
+- Apply every committed SQL migration to a dedicated Neon test branch through the direct connection.
 - Atomic room and round creation
 - Concurrent join behavior and the 12-player limit
 - Case-insensitive nickname uniqueness
 - One imposter per round and immutable round roster
 - Idempotent ready and reveal commands
 - Session revocation and token isolation
-- Anonymous inability to read secret-bearing tables
+- Runtime-role inability to read secret-bearing tables and inability to execute unapproved functions
 - Closed-room tombstone and cleanup behavior
 
 ### Component tests
@@ -282,7 +291,7 @@ Realtime invalidation does not expose a room table or event table to anonymous D
 - Local/Online switching without changing local setup behavior
 - Create, join, copy link, lobby roster, waiting state, and host controls
 - Private reveal privacy events and Ready behavior
-- Reconnect, host-away countdown, conflicts, and service errors
+- Foreground/background polling, unchanged-version `204`, retry backoff, focus recovery, host-away countdown, conflicts, and service errors
 - Staged public reveal and result actions
 
 ### Multi-browser end-to-end tests
@@ -296,7 +305,7 @@ Realtime invalidation does not expose a room table or event table to anonymous D
 - Explicit room closure and old-link homepage redirect
 - Simultaneous commands resolving to one authoritative transition
 
-The final verification gate runs lint, all tests, and a production build. Existing local-mode tests must remain green.
+The database suite runs against an isolated Neon branch, while unit and component tests use deterministic repository boundaries. The final verification gate runs database integration tests, lint, all application tests, and a production build. Existing local-mode tests must remain green.
 
 ## 14. Acceptance Criteria
 
@@ -305,7 +314,7 @@ The online mode is complete when:
 - A host can create a room without an account, copy its link, and start with 3–12 active players.
 - Guests can join from the link with only a valid nickname.
 - Every current-round participant receives exactly one private word on their own device, and no client can read another participant's unrevealed assignment.
-- All clients converge on the same authoritative phase through disconnects, refreshes, duplicate requests, and concurrent commands.
+- All clients converge on the same authoritative phase within the confirmed polling window through disconnects, refreshes, duplicate requests, and concurrent commands.
 - Late arrivals do not affect an active round and can participate in the next one.
 - The host can stage the reveal, replay through the lobby, cancel a blocked round, or close the room.
 - Host absence and hard expiry close the room according to the confirmed limits.
