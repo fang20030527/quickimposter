@@ -1442,7 +1442,7 @@ input:focus-visible {
 
   .steps-list li {
     min-height: 80px;
-    padding: 11px 42px 10px 14px;
+    padding: 11px 14px 10px;
     display: grid;
     grid-template-columns: 66px 58px 1fr;
     gap: 7px;
@@ -1467,15 +1467,6 @@ input:focus-visible {
   .steps-list p {
     font-size: 10px;
     line-height: 1.15;
-  }
-
-  .steps-list li::after {
-    content: "›";
-    position: absolute;
-    right: 15px;
-    color: var(--purple);
-    font-size: 34px;
-    font-weight: 900;
   }
 
   .privacy-section {
